@@ -3,5 +3,6 @@
 This is the website for the portfolio of Cindy Chang / cindychang.io
 
 ## Build
-- Parcel
+- Gulp
 - SASS (BEM)
+- CSS Grid
