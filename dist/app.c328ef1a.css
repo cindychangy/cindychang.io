@@ -307,12 +307,29 @@ template {
 
 .intro {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%; }
-  .intro__content {
-    background: orange; }
-  .intro__poster {
-    background: pink; }
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  height: auto; }
+  @media (min-width: 768px) {
+    .intro {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100% 100%;
+      height: 100%;
+      height: 100vh; } }
+
+.intro__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 2em; }
+  @media (min-width: 768px) {
+    .intro__content {
+      padding-left: 5em; } }
+
+.intro__poster {
+  background: url("/floral-poster.32d58878.svg");
+  background-size: cover; }
 
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */
