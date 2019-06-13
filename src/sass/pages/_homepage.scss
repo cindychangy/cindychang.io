@@ -1,0 +1,15 @@
+.intro {
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  grid-template-rows: 100%;
+
+  &__content {
+    background: orange;
+  }
+
+  &__poster {
+    background: pink;
+  }
+}
+
+

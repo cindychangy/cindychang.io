@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -303,9 +305,14 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  color: orange;
-  padding-right: 1rem; }
+.intro {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%; }
+  .intro__content {
+    background: orange; }
+  .intro__poster {
+    background: pink; }
 
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */
