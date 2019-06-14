@@ -33,15 +33,15 @@
   display: flex;
 }
 
-// @mixin flex-column {
-//   -ms-flex-direction: column;
-//   flex-direction: column;
-// }
+@mixin flex-column {
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
 
-// @mixin flex-row {
-//   -ms-flex-direction: row;
-//   flex-direction: row;
-// }
+@mixin flex-row {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
 
 // @mixin justify-between {
 //   -ms-flex-pack: justify;
