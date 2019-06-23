@@ -350,7 +350,8 @@ h2 {
   justify-content: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0 2em; }
+  padding: 0 2em;
+  height: 50vh; }
   .intro__content ul {
     list-style: none;
     padding: 0; }
@@ -361,11 +362,16 @@ h2 {
       font-size: 0.9375rem; }
   @media (min-width: 768px) {
     .intro__content {
-      padding-left: 5em; } }
+      padding-left: 5em;
+      height: 100vh; } }
 
 .intro__poster {
   background: url("/floral-poster.32d58878.svg");
-  background-size: cover; }
+  background-size: cover;
+  height: 50vh; }
+  @media (min-width: 768px) {
+    .intro__poster {
+      height: 100vh; } }
 
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */
