@@ -11,3 +11,10 @@ h2 {
   line-height: 1.4;
   @include font-size(26);
 }
+
+h3 {
+  font-family: $secondary-font;
+  font-weight: 200;
+  line-height: 1.4;
+  @include font-size(21);
+}

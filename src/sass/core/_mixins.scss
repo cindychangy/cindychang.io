@@ -3,7 +3,7 @@
   font-size: ($size / 16) + rem;
 }
 
-//media breakpoints
+// media breakpoints
 @mixin screen-sm {
   @media(min-width: 576px) {
     @content;
@@ -43,6 +43,15 @@
   flex-direction: row;
 }
 
+@mixin flex-center-all {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 // @mixin justify-between {
 //   -ms-flex-pack: justify;
 //   justify-content: space-between;
@@ -67,3 +76,13 @@
 //   -ms-flex-align: stretch;
 //   align-items: stretch;
 // }
+
+// borders
+
+@mixin color-line {
+  width: 150px;
+  height: 10px;
+  position: absolute;
+  top: 70%;
+  left: 43%;
+}
