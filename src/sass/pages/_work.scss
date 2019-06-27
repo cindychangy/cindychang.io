@@ -6,7 +6,7 @@
   height: auto;
   position: relative;
 
-  @include screen-md {
+  @include screen-lg {
     margin: 6em;
     grid-template-columns: 50% 50%;
     grid-template-rows: 100% 100%;
@@ -14,10 +14,11 @@
 }
 
 .project__content {
+  height: auto;
   @include flex-center-all;
-    @include screen-md {
-      height: 70vh;
+    @include screen-lg {
       padding-left: 4em;
+      height: 550px;
     }
 
     h1 {
@@ -27,21 +28,23 @@
 }
 
 .project__poster {
+  height: auto;
   position: relative;
-  // height: 70vh;
+
+    @include screen-lg {
+      height: 550px;
+    }
 
   img {
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    width: 90%;
-  }
-}
+    position: relative;
 
-.poster-bg {
-    background: $gray-light;
-    height: 800;
-    width: 400px;
+    @include screen-lg {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      width: 90%;
+    }
+  }
 }
 
 .color-line {
