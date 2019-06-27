@@ -1,4 +1,4 @@
-.work {
+.project {
   margin: 1em;
   display: grid;
   grid-template-columns: 100%;
@@ -13,22 +13,22 @@
   }
 }
 
-.work__content {
+.project__content {
   @include flex-center-all;
-
     @include screen-md {
       height: 70vh;
-      padding-left: 3em;
+      padding-left: 4em;
     }
 
     h1 {
-      margin: 0;
+      @include font-size(48);
+      margin-bottom: 0;
     }
 }
 
-.work__poster {
-  background: $gray-light;
+.project__poster {
   position: relative;
+  // height: 70vh;
 
   img {
     position: absolute;
@@ -38,7 +38,17 @@
   }
 }
 
-.blue-line {
+.poster-bg {
+    background: $gray-light;
+    height: 800;
+    width: 400px;
+}
+
+.color-line {
   @include color-line;
-  background: $teal;
+  display: none;
+
+  @include screen-md {
+    display: block;
+  }
 }

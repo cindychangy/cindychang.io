@@ -305,6 +305,12 @@ template {
 [hidden] {
   display: none; }
 
+.blue {
+  background: #16C3E5; }
+
+.orange {
+  background: #FF7500; }
+
 body {
   font-family: "Muli", sans-serif; }
 
@@ -317,22 +323,35 @@ h1 {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   color: #333;
-  font-size: 70px;
-  font-size: 4.375rem; }
+  font-size: 45px;
+  font-size: 2.8125rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 70px;
+      font-size: 4.375rem; } }
+
+h2,
+h3,
+h4 {
+  font-family: "Muli", sans-serif; }
 
 h2 {
-  font-family: "Muli", sans-serif;
   font-weight: 200;
   line-height: 1.4;
   font-size: 26px;
   font-size: 1.625rem; }
 
 h3 {
-  font-family: "Muli", sans-serif;
   font-weight: 200;
-  line-height: 1.4;
-  font-size: 21px;
-  font-size: 1.3125rem; }
+  line-height: 1.6;
+  font-size: 19px;
+  font-size: 1.1875rem; }
+
+h4 {
+  font-weight: 200;
+  line-height: 1.6;
+  font-size: 15px;
+  font-size: 0.9375rem; }
 
 .intro {
   display: grid;
@@ -380,7 +399,7 @@ h3 {
     .intro__poster {
       height: 100vh; } }
 
-.work {
+.project {
   margin: 1em;
   display: grid;
   grid-template-columns: 100%;
@@ -388,12 +407,12 @@ h3 {
   height: auto;
   position: relative; }
   @media (min-width: 768px) {
-    .work {
+    .project {
       margin: 6em;
       grid-template-columns: 50% 50%;
       grid-template-rows: 100% 100%; } }
 
-.work__content {
+.project__content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -401,28 +420,38 @@ h3 {
   -ms-flex-direction: column;
   flex-direction: column; }
   @media (min-width: 768px) {
-    .work__content {
+    .project__content {
       height: 70vh;
-      padding-left: 3em; } }
-  .work__content h1 {
-    margin: 0; }
+      padding-left: 4em; } }
+  .project__content h1 {
+    font-size: 48px;
+    font-size: 3rem;
+    margin-bottom: 0; }
 
-.work__poster {
-  background: #F3F7FB;
+.project__poster {
   position: relative; }
-  .work__poster img {
+  .project__poster img {
     position: absolute;
     bottom: 0;
     left: 5%;
     width: 90%; }
 
-.blue-line {
+.poster-bg {
+  background: #F3F7FB;
+  height: 800;
+  width: 400px; }
+
+.color-line {
   width: 150px;
   height: 10px;
   position: absolute;
   top: 70%;
   left: 43%;
-  background: #16C3E5; }
+  z-index: 999;
+  display: none; }
+  @media (min-width: 768px) {
+    .color-line {
+      display: block; } }
 
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */

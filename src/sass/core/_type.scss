@@ -2,19 +2,33 @@ h1 {
   font-family: $primary-font;
   font-weight: 900;
   color: $gray-dark;
-  @include font-size(70);
+  @include font-size(45);
+
+  @include screen-md {
+    @include font-size(70);
+  }
+}
+
+h2,
+h3,
+h4 {
+  font-family: $secondary-font;
 }
 
 h2 {
-  font-family: $secondary-font;
   font-weight: 200;
   line-height: 1.4;
   @include font-size(26);
 }
 
 h3 {
-  font-family: $secondary-font;
   font-weight: 200;
-  line-height: 1.4;
-  @include font-size(21);
+  line-height: 1.6;
+  @include font-size(19);
+}
+
+h4 {
+  font-weight: 200;
+  line-height: 1.6;
+  @include font-size(15);
 }
