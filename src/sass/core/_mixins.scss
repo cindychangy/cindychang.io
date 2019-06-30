@@ -52,11 +52,6 @@
   flex-direction: column;
 }
 
-// @mixin justify-between {
-//   -ms-flex-pack: justify;
-//   justify-content: space-between;
-// }
-
 @mixin justify-center {
   -ms-flex-pack: center;
   justify-content: center;
@@ -66,18 +61,6 @@
   -ms-flex-align: center;
   align-items: center;
 }
-
-// @mixin align-start {
-//   -ms-flex-line-pack: start;
-//   align-content: flex-start;
-// }
-
-// @mixin align-items-stretch {
-//   -ms-flex-align: stretch;
-//   align-items: stretch;
-// }
-
-// borders
 
 @mixin color-line {
   width: 150px;

@@ -38,30 +38,29 @@
 }
 
 .project__poster {
-  height: auto;
-  position: relative;
+  text-align: center;
 
     @include screen-lg {
       height: 550px;
+      @include flex-center-all;
     }
 
   img {
-    position: relative;
-
-    @include screen-lg {
-      position: absolute;
-      bottom: 0;
-      left: 5%;
-      width: 90%;
-    }
+    width: 90%;
+    height: auto;
   }
 }
 
 .color-line {
-  @include color-line;
   display: none;
 
   @include screen-md {
+    @include color-line;
+    top: inherit;
+    bottom: 0;
+  }
+
+  @include screen-lg {
     display: block;
   }
 }

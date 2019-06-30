@@ -453,29 +453,33 @@ h5 {
   left: 3px; }
 
 .project__poster {
-  height: auto;
-  position: relative; }
+  text-align: center; }
   @media (min-width: 992px) {
     .project__poster {
-      height: 550px; } }
+      height: 550px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
   .project__poster img {
-    position: relative; }
-    @media (min-width: 992px) {
-      .project__poster img {
-        position: absolute;
-        bottom: 0;
-        left: 5%;
-        width: 90%; } }
+    width: 90%;
+    height: auto; }
 
 .color-line {
-  width: 150px;
-  height: 10px;
-  position: absolute;
-  top: 70%;
-  left: 43%;
-  z-index: 999;
   display: none; }
   @media (min-width: 768px) {
+    .color-line {
+      width: 150px;
+      height: 10px;
+      position: absolute;
+      top: 70%;
+      left: 43%;
+      z-index: 999;
+      top: inherit;
+      bottom: 0; } }
+  @media (min-width: 992px) {
     .color-line {
       display: block; } }
 
