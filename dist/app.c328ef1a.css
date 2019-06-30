@@ -328,6 +328,12 @@ a {
   a:hover {
     color: #16C3E5; }
 
+footer {
+  margin: 2em 0;
+  text-align: center; }
+  footer:hover {
+    opacity: 0.6; }
+
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 900;
