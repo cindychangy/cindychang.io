@@ -474,14 +474,13 @@ h5 {
       width: 150px;
       height: 10px;
       position: absolute;
-      top: 70%;
       left: 43%;
       z-index: 999;
-      top: inherit;
       bottom: 0; } }
   @media (min-width: 992px) {
     .color-line {
-      display: block; } }
+      display: block;
+      bottom: 20%; } }
 
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

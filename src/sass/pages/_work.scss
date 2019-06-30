@@ -56,11 +56,11 @@
 
   @include screen-md {
     @include color-line;
-    top: inherit;
     bottom: 0;
   }
 
   @include screen-lg {
     display: block;
+    bottom: 20%;
   }
 }
