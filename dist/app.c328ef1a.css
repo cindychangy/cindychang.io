@@ -362,6 +362,9 @@ h4 {
   font-size: 15px;
   font-size: 0.9375rem; }
 
+h5 {
+  font-weight: 400; }
+
 .intro {
   display: grid;
   grid-template-columns: 100%;
