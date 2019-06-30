@@ -492,6 +492,6 @@ module.exports = function loadHTMLBundle(bundle) {
   });
 };
 },{}],0:[function(require,module,exports) {
-var b=require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["work.html","work.html"],["about.html","about.html"]]).then(function(){require("app.js");});
+var b=require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["work.html","work.html"],["about.61f4c280.html","about.html"]]).then(function(){require("app.js");});
 },{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
 //# sourceMappingURL=/app.c328ef1a.js.map
