@@ -32,22 +32,14 @@
   }
 
   a {
+    @include link-underline;
     color: $gray-dark;
-    padding-bottom: 0.25rem;
-    background: transparent;
     background-size: 0% 0.65rem;
-    background-repeat: no-repeat;
-    background-position: left 80%;
 
-      &:hover {
-        -webkit-transition: all 0.15s linear;
-        transition: all 0.15s linear;
-        background: -webkit-linear-gradient(left, rgba(227, 226, 16, 0.35) 0%, rgba(253, 191, 46, 0.35) 100%);
-        background: linear-gradient(to right, rgba(227, 226, 16, 0.35) 0%, rgba(253, 191, 46, 0.35) 100%);
-        background-size: 100% 0.65rem;
-        background-repeat: no-repeat;
-        background-position: left 80%;
-        }
+    &:hover {
+      @include link-underline-hover;
+      background-size: 100% 0.65rem;
+    }
   }
 
   @include screen-md {
