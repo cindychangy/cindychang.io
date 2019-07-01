@@ -371,7 +371,16 @@ h4 {
   font-size: 0.9375rem; }
 
 h5 {
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 1.5; }
+
+p {
+  font-size: 17px;
+  font-size: 1.0625rem; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 19px;
+      font-size: 1.1875rem; } }
 
 .intro {
   display: grid;
@@ -432,21 +441,22 @@ h5 {
       height: 100vh; } }
 
 .project {
-  margin: 1em;
+  margin: 2em;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
-  height: auto;
-  position: relative; }
+  position: relative;
+  border-bottom: 1px solid #ECEDF3;
+  padding-bottom: 4em; }
   @media (min-width: 992px) {
     .project {
       margin: 6em;
       grid-template-columns: 50% 50%;
-      grid-template-rows: 100% 100%; } }
+      grid-template-rows: 100% 100%;
+      border-bottom: 0; } }
 
 .project__content {
-  height: auto;
-  height: 300px;
+  order: 1;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -455,8 +465,8 @@ h5 {
   flex-direction: column; }
   @media (min-width: 992px) {
     .project__content {
-      padding-left: 4em;
-      height: 550px; } }
+      padding: 0 3em;
+      order: inherit; } }
   .project__content h1 {
     font-size: 38px;
     font-size: 2.375rem;
@@ -465,6 +475,9 @@ h5 {
       .project__content h1 {
         font-size: 48px;
         font-size: 3rem; } }
+
+.project__content .project__content__text h3 a {
+  background: transparent !important; }
 
 .project__content .project__content__text svg {
   position: relative;
@@ -494,16 +507,16 @@ h5 {
 
 .project__poster {
   text-align: center;
-  height: 300px; }
+  order: 2; }
   @media (min-width: 992px) {
     .project__poster {
-      height: 550px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
       justify-content: center;
       -ms-flex-direction: column;
-      flex-direction: column; } }
+      flex-direction: column;
+      order: inherit; } }
   .project__poster img {
     width: 90%;
     height: auto; }
@@ -512,12 +525,14 @@ h5 {
   display: none; }
   @media (min-width: 768px) {
     .color-line {
-      width: 150px;
       height: 10px;
       position: absolute;
       left: 43%;
       z-index: 999;
       bottom: 0; } }
+  @media (min-width: 768px) and (min-width: 992px) {
+    .color-line {
+      width: 10%; } }
   @media (min-width: 992px) {
     .color-line {
       display: block;

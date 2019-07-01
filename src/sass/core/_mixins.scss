@@ -63,11 +63,14 @@
 }
 
 @mixin color-line {
-  width: 150px;
   height: 10px;
   position: absolute;
   left: 43%;
   z-index: 999;
+
+    @include screen-lg {
+      width: 10%;
+    }
 }
 
 @mixin link-underline {
