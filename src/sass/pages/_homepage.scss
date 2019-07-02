@@ -58,4 +58,8 @@
   }
 }
 
+a.highlight {
+  @include link-underline-hover;
+  background-size: 100% 0.55rem;
+}
 

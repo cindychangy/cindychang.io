@@ -440,6 +440,15 @@ p {
     .intro__poster {
       height: 100vh; } }
 
+a.highlight {
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  background: -webkit-linear-gradient(left, rgba(227, 226, 16, 0.35) 0%, rgba(253, 191, 46, 0.35) 100%);
+  background: linear-gradient(to right, rgba(227, 226, 16, 0.35) 0%, rgba(253, 191, 46, 0.35) 100%);
+  background-repeat: no-repeat;
+  background-position: left 80%;
+  background-size: 100% 0.55rem; }
+
 .project {
   margin: 2em;
   display: grid;
