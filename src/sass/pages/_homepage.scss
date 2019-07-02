@@ -17,8 +17,13 @@
   @include flex;
   @include justify-center;
   @include flex-column;
-  padding: 0 2em;
-  height: 50vh;
+  padding: 0 3em 1em 3em;
+  min-height: 50vh;
+
+  @include screen-lg {
+    padding: 0 4em;
+    height: 100vh;
+  }
 
   ul {
     list-style: none;
@@ -41,17 +46,12 @@
       background-size: 100% 0.65rem;
     }
   }
-
-  @include screen-md {
-    padding-left: 5em;
-    height: 100vh;
-  }
 }
 
 .intro__poster {
   background: url('./dist/img/floral-poster.svg');
   background-size: cover;
-  height: 50vh;
+  min-height: 50vh;
 
   @include screen-md {
    height: 100vh;

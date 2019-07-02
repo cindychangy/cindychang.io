@@ -401,8 +401,12 @@ p {
   justify-content: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0 2em;
-  height: 50vh; }
+  padding: 0 3em 1em 3em;
+  min-height: 50vh; }
+  @media (min-width: 992px) {
+    .intro__content {
+      padding: 0 4em;
+      height: 100vh; } }
   .intro__content ul {
     list-style: none;
     padding: 0; }
@@ -427,15 +431,11 @@ p {
       background-repeat: no-repeat;
       background-position: left 80%;
       background-size: 100% 0.65rem; }
-  @media (min-width: 768px) {
-    .intro__content {
-      padding-left: 5em;
-      height: 100vh; } }
 
 .intro__poster {
   background: url("/floral-poster.32d58878.svg");
   background-size: cover;
-  height: 50vh; }
+  min-height: 50vh; }
   @media (min-width: 768px) {
     .intro__poster {
       height: 100vh; } }

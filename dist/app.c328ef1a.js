@@ -197,8 +197,6 @@ require("./styles.scss");
 require("./work.html");
 
 require("./about.html");
-
-console.log('hello there');
 },{"./styles.scss":"styles.scss","./work.html":"work.html","./about.html":"about.html"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -227,7 +225,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58850" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60013" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
