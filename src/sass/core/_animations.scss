@@ -1,0 +1,189 @@
+.circle {
+  position: absolute;
+  top: 113px;
+  left: 127px;
+  width: 85px;
+  opacity: 0.5;
+}
+
+.st0 {
+  fill: none;
+}
+
+.st1 {
+  fill: #02a9ad;
+}
+
+.leaf-purple,
+.leaf-teal-branch,
+.stem-purple-right,
+.stem-purple-left {
+  fill: #4216ab;
+}
+
+.leaf-teal,
+.leaf-purple-branch,
+.stem-teal-left,
+.stem-teal-right {
+  fill: #02a9ad
+}
+
+.circle-large {
+  fill: #fcb72c;
+}
+
+.circle-small {
+  fill: #fc9f0b;
+}
+
+.circles-group {
+  fill: #dbd9d9;
+}
+
+.leaf-teal-branch,
+.leaf-purple-branch {
+  animation: branchGrow 3s;
+  transform-origin: left bottom;
+}
+
+.stem-purple-right,
+.stem-teal-right {
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.stem-purple-left,
+.stem-teal-left {
+  -webkit-transform-origin: bottom right;
+  transform-origin: bottom right;
+}
+
+.stem-purple-left,
+.stem-purple-right,
+.stem-teal-left,
+.stem-teal-right {
+  -webkit-animation-name: stemGrow;
+  animation-name: stemGrow;
+  transform-box: fill-box;
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@keyframes branchGrow {
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes stemGrow {
+  75% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  95% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+
+  0% {
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+.dotbg1 {
+  animation: changeBackground 4s ease infinite;
+}
+
+.dotbg2 {
+  animation: changeBackground2 2s ease infinite;
+}
+
+.dotbg3 {
+  animation: changeBackground3 2s ease infinite;
+}
+
+@keyframes changeBackground {
+  0% {
+    fill: #fbc96b;
+  }
+
+  25% {
+    fill: #f4832f;
+  }
+
+  50% {
+    fill: #f43599;
+  }
+
+  75% {
+    fill: #f4832f;
+  }
+
+  100% {
+    fill: #fbc96b;
+  }
+}
+
+@keyframes changeBackground2 {
+  0% {
+    fill: #5fd887;
+  }
+
+  50% {
+    fill: #02A9AD;
+  }
+
+  75% {
+    fill: #f4832f;
+  }
+
+  100% {
+    fill: #844397;
+  }
+}
+
+@keyframes changeBackground3 {
+  0% {
+    fill: #fff;
+  }
+
+  25% {
+    fill: #f43599;
+  }
+
+  50% {
+    fill: #02A9AD;
+  }
+
+  100% {
+    fill: #ff7a7a;
+  }
+}
+
+// animation: colorPulse 4s infinite;
+// animation-timing-function: ease-in-out;
+
+// @keyframes colorPulse {
+//   from {
+//     background: #c7cdce;
+//   }
+//   to {
+//     background-color: #f7f7f7;
+//   }
+// }

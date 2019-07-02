@@ -49,7 +49,8 @@
 }
 
 .intro__poster {
-  background: url('./dist/img/floral-poster.svg');
+  background-color: $blue;
+  background-image: url('img/abstract-poster.svg');
   background-size: cover;
   min-height: 50vh;
 
