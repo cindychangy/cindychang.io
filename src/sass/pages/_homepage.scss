@@ -3,6 +3,8 @@
   grid-template-columns: 100%; 
   grid-template-rows: auto auto;
   height: auto;
+  position: relative;
+  overflow: hidden;
 
   @include screen-md {
     grid-template-columns: 50% 50%;
@@ -11,7 +13,6 @@
     height: 100vh;
   }
 }
-
 
 .intro__content {
   @include flex;
@@ -53,9 +54,22 @@
   background-image: url('img/abstract-poster.svg');
   background-size: cover;
   min-height: 50vh;
+  overflow: hidden;
 
   @include screen-md {
    height: 100vh;
+  }
+
+  svg {
+    width: 45%;
+    position: absolute;
+    bottom: -76px;
+    right: 105px;
+    transform: rotate(300deg);
+
+    @include screen-md {
+      width: 30%;
+    }
   }
 }
 

@@ -321,7 +321,8 @@ template {
   background: #663D9F; }
 
 body {
-  font-family: "Muli", sans-serif; }
+  font-family: "Muli", sans-serif;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -382,39 +383,17 @@ p {
       font-size: 19px;
       font-size: 1.1875rem; } }
 
-.circle {
-  position: absolute;
-  top: 113px;
-  left: 127px;
-  width: 85px;
-  opacity: 0.5; }
-
-.st0 {
-  fill: none; }
-
-.st1 {
-  fill: #02a9ad; }
-
 .leaf-purple,
 .leaf-teal-branch,
 .stem-purple-right,
 .stem-purple-left {
-  fill: #4216ab; }
+  fill: #2F8C91; }
 
 .leaf-teal,
 .leaf-purple-branch,
 .stem-teal-left,
 .stem-teal-right {
-  fill: #02a9ad; }
-
-.circle-large {
-  fill: #fcb72c; }
-
-.circle-small {
-  fill: #fc9f0b; }
-
-.circles-group {
-  fill: #dbd9d9; }
+  fill: #ACEABB; }
 
 .leaf-teal-branch,
 .leaf-purple-branch {
@@ -466,52 +445,13 @@ p {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); } }
 
-.dotbg1 {
-  animation: changeBackground 4s ease infinite; }
-
-.dotbg2 {
-  animation: changeBackground2 2s ease infinite; }
-
-.dotbg3 {
-  animation: changeBackground3 2s ease infinite; }
-
-@keyframes changeBackground {
-  0% {
-    fill: #fbc96b; }
-  25% {
-    fill: #f4832f; }
-  50% {
-    fill: #f43599; }
-  75% {
-    fill: #f4832f; }
-  100% {
-    fill: #fbc96b; } }
-
-@keyframes changeBackground2 {
-  0% {
-    fill: #5fd887; }
-  50% {
-    fill: #02A9AD; }
-  75% {
-    fill: #f4832f; }
-  100% {
-    fill: #844397; } }
-
-@keyframes changeBackground3 {
-  0% {
-    fill: #fff; }
-  25% {
-    fill: #f43599; }
-  50% {
-    fill: #02A9AD; }
-  100% {
-    fill: #ff7a7a; } }
-
 .intro {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
-  height: auto; }
+  height: auto;
+  position: relative;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .intro {
       grid-template-columns: 50% 50%;
@@ -561,10 +501,20 @@ p {
   background-color: #7FCCE1;
   background-image: url("/abstract-poster.2666aa15.svg");
   background-size: cover;
-  min-height: 50vh; }
+  min-height: 50vh;
+  overflow: hidden; }
   @media (min-width: 768px) {
     .intro__poster {
       height: 100vh; } }
+  .intro__poster svg {
+    width: 45%;
+    position: absolute;
+    bottom: -76px;
+    right: 105px;
+    transform: rotate(300deg); }
+    @media (min-width: 768px) {
+      .intro__poster svg {
+        width: 30%; } }
 
 a.highlight {
   -webkit-transition: all 0.15s linear;
