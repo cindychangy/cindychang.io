@@ -40,6 +40,8 @@ h5 {
 
  p {
   @include font-size(17);
+  line-height: 1.4;
+  font-weight: 200;
 
     @include screen-md {
       @include font-size(19);

@@ -377,7 +377,9 @@ h5 {
 
 p {
   font-size: 17px;
-  font-size: 1.0625rem; }
+  font-size: 1.0625rem;
+  line-height: 1.4;
+  font-weight: 200; }
   @media (min-width: 768px) {
     p {
       font-size: 19px;
@@ -525,7 +527,8 @@ a.highlight {
   background-position: left 80%;
   background-size: 100% 0.55rem; }
 
-.work {
+.work,
+.project {
   margin: 2em;
   display: grid;
   grid-template-columns: 100%;
@@ -534,7 +537,8 @@ a.highlight {
   border-bottom: 1px solid #ECEDF3;
   padding-bottom: 4em; }
   @media (min-width: 992px) {
-    .work {
+    .work,
+    .project {
       margin: 6em;
       grid-template-columns: 50% 50%;
       grid-template-rows: 100% 100%;
@@ -622,6 +626,19 @@ a.highlight {
     .color-line {
       display: block;
       bottom: 34%; } }
+
+.project {
+  border-bottom: 0; }
+
+.project__summary {
+  padding: 0; }
+  @media (min-width: 992px) {
+    .project__summary {
+      padding: 0 3em 0 2em; } }
+
+.project__image {
+  background: #ECEDF3;
+  padding: 1em; }
 
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

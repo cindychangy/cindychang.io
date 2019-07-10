@@ -1,0 +1,18 @@
+//.project is using same base styles as .work (scss)
+
+.project {
+  border-bottom: 0;
+}
+
+.project__summary {
+  padding: 0;
+
+  @include screen-lg {
+    padding: 0 3em 0 2em;
+  }
+}
+
+.project__image {
+  background: $gray-light;
+  padding: 1em;
+}
