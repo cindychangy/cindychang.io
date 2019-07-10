@@ -628,9 +628,14 @@ a.highlight {
       bottom: 34%; } }
 
 .project {
-  border-bottom: 0; }
-  .project h1 {
-    margin-top: 0; }
+  border-bottom: 0;
+  padding: 2em 0; }
+  @media (min-width: 768px) {
+    .project {
+      padding: 6em; } }
+
+.project__name h1 {
+  margin: 0; }
 
 .project__summary {
   padding: 0; }
@@ -642,7 +647,18 @@ a.highlight {
 
 .project__image {
   background: #ECEDF3;
-  padding: 1em; }
+  padding: 3em 0;
+  text-align: center;
+  margin: 1em 0; }
+  .project__image img {
+    width: 90%; }
+  @media (min-width: 768px) {
+    .project__image img {
+      width: 80%; } }
+  @media (min-width: 992px) {
+    .project__image img {
+      width: 60%;
+      margin: auto; } }
 
 
 /*# sourceMappingURL=/app.c328ef1a.css.map */
