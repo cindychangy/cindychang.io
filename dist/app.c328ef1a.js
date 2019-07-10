@@ -195,9 +195,7 @@ module.hot.accept(reloadCSS);
 require("./styles.scss");
 
 require("./work.html");
-
-require("./about.html");
-},{"./styles.scss":"styles.scss","./work.html":"work.html","./about.html":"about.html"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./styles.scss":"styles.scss","./work.html":"work.html"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -225,7 +223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55704" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58996" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -490,6 +488,6 @@ module.exports = function loadHTMLBundle(bundle) {
   });
 };
 },{}],0:[function(require,module,exports) {
-var b=require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["work.html","work.html"],["about.61f4c280.html","about.html"]]).then(function(){require("app.js");});
+var b=require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/bundle-loader.js");b.register("html",require("../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/loaders/browser/html-loader.js"));b.load([["work.html","work.html"]]).then(function(){require("app.js");});
 },{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js",0], null)
 //# sourceMappingURL=/app.c328ef1a.js.map
