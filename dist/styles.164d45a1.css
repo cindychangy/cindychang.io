@@ -629,6 +629,8 @@ a.highlight {
 
 .project {
   border-bottom: 0; }
+  .project h1 {
+    margin-top: 0; }
 
 .project__summary {
   padding: 0; }
