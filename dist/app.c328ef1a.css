@@ -635,6 +635,8 @@ a.highlight {
   @media (min-width: 992px) {
     .project__summary {
       padding: 0 3em 0 2em; } }
+  .project__summary p {
+    line-height: 1.5; }
 
 .project__image {
   background: #ECEDF3;
