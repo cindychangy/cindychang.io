@@ -1,4 +1,4 @@
-.project {
+.work {
   margin: 2em;
   display: grid;
   grid-template-columns: 100%;
@@ -15,7 +15,7 @@
   }
 }
 
-.project__content {
+.work__project {
   order: 1;
 
   @include flex-center-all;
@@ -34,8 +34,8 @@
     }
 }
 
-.project__content {
-  .project__content__text {
+.work__project {
+  .work__project__text {
 
     h3 a {
       background: transparent !important;
@@ -66,7 +66,7 @@
   }
 }
 
-.project__poster {
+.work__poster {
   text-align: center;
   order: 2;
 

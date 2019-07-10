@@ -525,7 +525,7 @@ a.highlight {
   background-position: left 80%;
   background-size: 100% 0.55rem; }
 
-.project {
+.work {
   margin: 2em;
   display: grid;
   grid-template-columns: 100%;
@@ -534,13 +534,13 @@ a.highlight {
   border-bottom: 1px solid #ECEDF3;
   padding-bottom: 4em; }
   @media (min-width: 992px) {
-    .project {
+    .work {
       margin: 6em;
       grid-template-columns: 50% 50%;
       grid-template-rows: 100% 100%;
       border-bottom: 0; } }
 
-.project__content {
+.work__project {
   order: 1;
   display: -ms-flexbox;
   display: flex;
@@ -549,31 +549,31 @@ a.highlight {
   -ms-flex-direction: column;
   flex-direction: column; }
   @media (min-width: 992px) {
-    .project__content {
+    .work__project {
       padding: 0 3em;
       order: inherit; } }
-  .project__content h1 {
+  .work__project h1 {
     font-size: 38px;
     font-size: 2.375rem;
     margin-bottom: 0; }
     @media (min-width: 768px) {
-      .project__content h1 {
+      .work__project h1 {
         font-size: 48px;
         font-size: 3rem; } }
 
-.project__content .project__content__text h3 a {
+.work__project .work__project__text h3 a {
   background: transparent !important; }
 
-.project__content .project__content__text svg {
+.work__project .work__project__text svg {
   position: relative;
   top: 2px;
   left: 3px; }
-  .project__content .project__content__text svg:hover {
+  .work__project .work__project__text svg:hover {
     transition: .085s all ease-in;
     transform: scale(1.3);
     left: 6px; }
 
-.project__content .project__content__text a {
+.work__project .work__project__text a {
   color: #333;
   padding-bottom: 0.25rem;
   background: transparent;
@@ -581,7 +581,7 @@ a.highlight {
   background-position: left 80%;
   background-size: 0% 0.55rem;
   color: #333; }
-  .project__content .project__content__text a:hover {
+  .work__project .work__project__text a:hover {
     -webkit-transition: all 0.15s linear;
     transition: all 0.15s linear;
     background: -webkit-linear-gradient(left, rgba(227, 226, 16, 0.35) 0%, rgba(253, 191, 46, 0.35) 100%);
@@ -590,11 +590,11 @@ a.highlight {
     background-position: left 80%;
     background-size: 100% 0.55rem; }
 
-.project__poster {
+.work__poster {
   text-align: center;
   order: 2; }
   @media (min-width: 992px) {
-    .project__poster {
+    .work__poster {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
@@ -602,7 +602,7 @@ a.highlight {
       -ms-flex-direction: column;
       flex-direction: column;
       order: inherit; } }
-  .project__poster img {
+  .work__poster img {
     width: 90%;
     height: auto; }
 
