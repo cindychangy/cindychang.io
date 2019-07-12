@@ -50,3 +50,11 @@
     }
   }
 }
+
+.footer--project {
+  margin: 3em 0;
+
+  @include screen-md {
+    margin: 6em 0;
+  }
+}
