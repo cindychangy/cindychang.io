@@ -1,17 +1,36 @@
-//.project is using same base styles as .work (scss)
 
 .project {
-  border-bottom: 0;
-  padding: 2em 0;
+  margin: 3em 2em;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  position: relative;
 
   @include screen-md {
-    padding: 6em;
+    margin: 6em;
+  }
+
+  @include screen-lg {
+    margin: 8em;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100% 100%;
+    border-bottom: 0;
   }
 }
 
 .project__name {
+  text-align: left;
+
+  @include screen-lg {
+    text-align: center;
+  }
+
   h1 {
     margin: 0;
+
+    @include screen-md {
+      @include font-size(58);
+    }
   }
 }
 
@@ -24,6 +43,7 @@
 
   p {
     line-height: 1.5;
+    margin-top: 0.5em;
   }
 }
 
