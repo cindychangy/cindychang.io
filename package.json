@@ -1,0 +1,33 @@
+{
+  "name": "cindychang.io",
+  "version": "1.0.0",
+  "description": "This is the website for the portfolio of Cindy Chang / cindychang.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently -k \"npm run dev\" \"npm run watch-css\"",
+    "dev": "lite-server",
+    "build-js": "uglifyjs src/js/*.js -m -o dist/js/scripts.js",
+    "lint": "lint jshint src/**/**.js",
+    "build-css": "cleancss --output dist/styles/main.css src/css/main.css",
+    "watch-css": "nodemon -V -w src -e css -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cindychangy/cindychang.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cindychangy/cindychang.io/issues"
+  },
+  "homepage": "https://github.com/cindychangy/cindychang.io#readme",
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.3.0",
+    "concurrently": "^4.1.2",
+    "jshint": "^2.10.2",
+    "lite-server": "^2.5.4",
+    "nodemon": "^1.19.2",
+    "uglify-js": "^3.6.0"
+  }
+}
