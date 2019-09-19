@@ -1,1 +1,1 @@
-body{background:#000}h1{color:red}
+.logo{background:orange}.main-nav{background:red}.hero{background:green}.projects{background:#00f}.contact{background:pink}body{font-size:1rem}.container,header{padding:2rem 2rem 0 2rem}.text-bg{font-size:25rem;color:#efef60}header{display:grid;grid-template-columns:minmax(70px,140px) 1fr}.hero{position:relative;height:80%;height:80vh;display:flex;flex-direction:column;align-items:center;justify-content:center}.hero__bg{position:absolute;z-index:1}.hero__intro{position:relative;z-index:2}
