@@ -30,19 +30,33 @@ main {
 }
 
 /*Typography*/
+h1 {
+  font-size: 3.4rem;
+  line-height: 1.4;
+  font-family: var(--titleFont, sans-serif); 
+}
+
+h2 {
+  font-family: var(--titleFont, sans-serif);
+  font-size: 2rem;
+  line-height: 2.1;
+  font-weight: 700;
+}
+
 .text-bg {
   font-size: 25rem;
-  font-weight: 700;
   color: var(--gray);
-  font-family: var(--titleFont, sans-serif);
   text-transform: uppercase;
 }
 
-h1 {
-  font-size: 3.4rem;
-  line-height: 4.6rem;
-  font-family: var(--titleFont, sans-serif); 
+.vertical {
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  width: 100%;
 }
+
 
 /*homepage*/
 .home {
@@ -53,7 +67,6 @@ h1 {
 /*header*/
 header {
   grid-column: span 4;
-  background: #cecece;
   display: flex;
   align-content: center;
   justify-content: space-between;
@@ -81,7 +94,6 @@ header {
 }
 
 main {
-  background: #eae9e9;
   grid-column: span 4;
   display: grid;
 }
@@ -117,6 +129,15 @@ main {
 
 .work__sidebar {
   background: var(--purple);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
+.work__sidebar h3 {
+  color: #fff;
 }
 
 .work__clients {
@@ -127,12 +148,18 @@ main {
 
 .project {
   background: #cecece;
+  height: 350px;
+}
+
+footer {
+  grid-column: span 4;
+  text-align: center;
+  padding: 4rem 0;
 }
 
 
 
 @media (max-width: 800px) {
-
   header {
     flex-direction: column;
   }
@@ -150,16 +177,14 @@ main {
     grid-column: span 2;
   } 
 
-}
-
-
-
-/* 
-@media (max-width: 500px) {
-  .text-bg {
-    font-size: 10rem;
+  .vertical {
+    writing-mode: horizontal-tb;
+      transform: rotate(0);
   }
-}  */
 
-
+  .work__sidebar {
+    padding-bottom: 0;
+    padding-left: 2rem;
+  }
+}
 
