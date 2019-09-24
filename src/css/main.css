@@ -5,10 +5,10 @@
   --gray: #eceff2;
   --orange: #FF5F2D;
   --green: #32C632;
-  --blue: #323CC1;
+  --blue: #3921D1;
   --titleFont: 'Poppins', sans-serif;
   --bodyFont: 'Muli', sans-serif;
-  --linkColor: #8D9294;
+
 }
 
 /* Base */
@@ -24,7 +24,29 @@ body {
 
 a {
   text-decoration: none;
-  color: var(--linkColor);
+  color: var(--orange);
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.link {
+  padding-bottom: .25rem;
+  background: 0 0;
+  background-repeat: no-repeat;
+  background-position: left 80%;
+  color: #333;
+  background-size: 0 .65rem;
+  transition: 85ms all ease-in;
+}
+
+.link:hover {
+background: linear-gradient(to right, rgba(227, 226, 16, .35) 0, rgba(253, 191, 46, .35) 100%);
+background-repeat: no-repeat;
+background-position: left 80%;
+background-size: 100% .65rem;
+opacity: 1;
 }
 
 .underline {
