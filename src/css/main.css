@@ -157,8 +157,53 @@ main {
 
 .project {
   background: #cecece;
-  height: 350px;
+  height: 400px;
 }
+
+.project--domino {
+  background: url('../../dist/img/cover-domino.png') no-repeat center;
+  background-size: cover;
+  background-color: #232431;
+}
+
+.project--sp {
+  background: url('../../dist/img/cover-sp.png') no-repeat center;
+  background-size: 155px 300px;
+  background-color: #FF5F2D;
+  background-position-y: 20px;
+}
+
+.project--apex {
+  background: url('../../dist/img/cover-apex.png') no-repeat top;
+  background-size: cover;
+}
+
+.project--huecry {
+  background: url('../../dist/img/cover-huecry.png') no-repeat top;
+  background-size: cover;
+  background-size: 390px 253px;
+  background-position-y: 50px;
+  background-color: #323CC1;
+}
+
+.project--skate {
+  background: url('../../dist/img/cover-skate.png') no-repeat center;
+  background-size: 341px 204px;
+  background-position-y: 50px;
+  background-color: #32C632;
+}
+
+.project--kg {
+  background: url('../../dist/img/cover-kg.png') no-repeat center;
+  background-size: cover;
+}
+
+
+
+
+
+
+
 
 footer {
   grid-column: span 4;
