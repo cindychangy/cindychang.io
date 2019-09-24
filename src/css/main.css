@@ -2,7 +2,7 @@
   --purple: #2F278E;
   --black: #232431;
   --pink: #FE3D86;
-  --gray: #F2F5FA;
+  --gray: #eceff2;
   --orange: #FF5F2D;
   --green: #32C632;
   --blue: #323CC1;
@@ -61,6 +61,7 @@ h2 {
 h3 {
   font-size: 1.3rem;
   line-height: 1.4;
+  font-weight: 200;
 }
 
 h4 {
@@ -249,7 +250,7 @@ header {
   grid-gap: 1rem;
   align-items: center;
   max-width: 74%;
-  margin: 5rem auto 5rem auto;
+  margin: 7rem auto 7rem auto;
 }
 
 .project-image {
