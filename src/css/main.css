@@ -17,9 +17,13 @@ body {
   font-weight: 200;
   font-family: var(--bodyFont, sans-serif);
   color: var(--black);
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
 }
 
 a {
@@ -152,12 +156,14 @@ header {
 .header__nav ul {
   list-style: none;
   font-family: var(--titleFont, sans-serif);
+  padding: 0;
 }
 
 .header__nav ul li {
   display: inline-block;
-  width: 6rem;
+  width: auto;
   text-transform: uppercase;
+  margin: 0 0.8rem;
 }
 
 /* Hero */
