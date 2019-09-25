@@ -19,10 +19,6 @@ body {
   color: var(--black);
   margin: 0;
   padding: 0;
-}
-
-body,
-html {
   overflow-x: hidden;
 }
 
@@ -136,6 +132,7 @@ p {
 .home {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  overflow-x: hidden;
 }
 
 main {
