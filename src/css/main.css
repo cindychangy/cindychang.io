@@ -186,9 +186,8 @@ header {
   position: relative;
   z-index: 2;
   max-width: 45rem;
-	-webkit-animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-	animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
-  animation-delay: 0.3s;
+  -webkit-animation: animate-focus 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  animation: animate-focus 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 
 /* Work */
@@ -381,37 +380,28 @@ footer a:hover {
 
 
 /* animations */
-
-@-webkit-keyframes puff-in-center {
+@-webkit-keyframes animate-focus {
   0% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
   }
 }
 
-@keyframes puff-in-center {
+@keyframes animate-focus {
   0% {
-    -webkit-transform: scale(2);
-    transform: scale(2);
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
     opacity: 0;
   }
 
   100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
     -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
