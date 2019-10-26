@@ -1,11 +1,24 @@
-# Hue and Cry
+# cindychang.io
+This is the website for the portfolio of cindychang.io
 
-This is the website for the portfolio of Cindy Chang / cindychang.io
+## Installation
+Use NPM to install
 
-## Build
-- CSS Grid
-- CSS Variables
-- NPM package manager
+```bash
+npm install
+```
 
-## Workflow
--The site uses parcel to compile assets, to start run: `parcel index.html`
+## Usage
+The site uses NPM scripts to compile SCSS and JS:
+
+To run dev server:
+
+```bash
+npm run start
+```
+
+To build for production:
+
+```bash
+npm run build
+```
