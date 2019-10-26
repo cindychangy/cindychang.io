@@ -1,0 +1,66 @@
+.work {
+  padding: 9rem 0;
+  display: flex;
+
+  &__clients {
+    padding-left: 6rem;
+    list-style: none;
+    font-size: 2rem;
+    flex: 0 0 35%;
+
+      .client-list {
+        list-style: none;
+
+        li {
+          & a:link,
+          & a:visited {
+            color: var(--black);
+          }
+
+          &:not(:last-child) {
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
+
+  &__art {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+}
+
+.shape {
+      position: absolute;
+
+  &--1 {
+    height: 45rem;
+    width: 45rem;
+    border-radius: 50%;
+    left: 30%;
+    background-color: var(--purple);
+  }
+
+  &--2 {
+    height: 40rem;
+    width: 40rem;
+    clip-path: circle(48.2% at 0 52%);
+    background-color: var(--teal);
+    left: 15%;
+    bottom: -70%;
+    transform: rotate(70deg);
+    z-index: 3;
+
+  }
+
+  &--3 {
+    height: 28rem;
+    width: 28rem;
+    bottom: -30%;
+    right: 20%;
+    background: var(--coral);
+  }
+}
