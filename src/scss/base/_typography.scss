@@ -1,6 +1,21 @@
+
+h2 {
+  font-family: var(--titleFont);
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.callout-text {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 200;
+}
+
 .text-stamp {
   font-family: var(--titleFont);
   font-weight: 700;
   font-size: 33rem;
+  line-height: 1;
 }
+
 

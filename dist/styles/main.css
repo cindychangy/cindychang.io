@@ -4,6 +4,7 @@
   --pink: #ff059d;
   --gray: #eceff2;
   --coral: #FBABA8;
+  --orange: #FF8B5C;
   --green: #32C632;
   --teal: #25C7EB;
   --titleFont: 'Poppins', sans-serif;
@@ -25,6 +26,10 @@ body {
   line-height: 1.7;
   box-sizing: border-box; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 a {
   text-decoration: none; }
 
@@ -36,10 +41,21 @@ a {
   background: var(--pink);
   color: #fff; }
 
+h2 {
+  font-family: var(--titleFont);
+  font-size: 3rem;
+  line-height: 1.3; }
+
+.callout-text {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 200; }
+
 .text-stamp {
   font-family: var(--titleFont);
   font-weight: 700;
-  font-size: 33rem; }
+  font-size: 33rem;
+  line-height: 1; }
 
 .row {
   max-width: 114rem;
@@ -92,7 +108,7 @@ a {
     margin-right: 32rem; }
   .header__stamp {
     position: absolute;
-    top: 5rem;
+    top: 16rem;
     right: 5rem;
     transform: rotate(-90deg); }
 
@@ -123,6 +139,16 @@ a {
     .nav li a:link,
     .nav li a:visited {
       color: var(--black); }
+
+.footer {
+  position: relative;
+  height: 20rem;
+  overflow: hidden; }
+  .footer .text-stamp {
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%); }
 
 .work {
   padding: 9rem 0;
@@ -170,3 +196,16 @@ a {
     background: var(--coral); }
 
 /* Work */
+.contact {
+  margin: 10rem auto;
+  width: 40%;
+  text-align: center; }
+  .contact__line {
+    height: 240px;
+    width: 1px;
+    border-left: 1px solid var(--orange);
+    margin: 4.2rem auto; }
+  .contact a {
+    font-weight: 400; }
+  .contact p {
+    padding-top: 4rem; }

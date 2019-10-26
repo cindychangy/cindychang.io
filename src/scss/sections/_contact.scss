@@ -1,0 +1,21 @@
+.contact {
+  margin: 10rem auto;
+  width: 40%;
+  text-align: center;
+
+  &__line {
+    height: 240px;
+    width: 1px;
+    border-left: 1px solid var(--orange);
+    margin: 4.2rem auto;
+    
+  }
+
+  a {
+    font-weight: 400;
+  }
+
+  p {
+    padding-top: 4rem; 
+  }
+}

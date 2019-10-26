@@ -1,0 +1,12 @@
+.footer {
+  position: relative;
+  height: 20rem;
+  overflow: hidden;
+
+  .text-stamp {
+    position: absolute;
+    top: -1.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
