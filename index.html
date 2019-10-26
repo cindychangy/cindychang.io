@@ -6,75 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CindyChang.io | Front-End Designer</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:300,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="dist/styles/main.css">
   <link rel="icon" href="favicon.png" sizes="16x16" />
 </head>
 
   <body>
-    <div class="home page-spacing">
-      <header>
-        <div class="header__logo">
-          <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 33 30" width="40">
-            <g id="Page-1">
-              <g id="Homepage-Copy-3" transform="translate(-80 -60)">
-                <g id="c-logo">
-                  <path fill="#2dd8d1"
-                    d="M20.4-5.3c6.7 0 11.7 3.8 13.3 9.8h-7.5C25.1 2.2 23 1 20.4 1c-4.2 0-7.1 3.1-7.1 8.1s2.9 8.1 7.1 8.1c2.6 0 4.7-1.2 5.9-3.6h7.5c-1.6 6.1-6.6 9.8-13.3 9.8-8.3 0-14.1-5.9-14.1-14.3-.1-8.4 5.8-14.4 14-14.4z"
-                    transform="translate(79 66)" />
-                  <path
-                    d="M15.4-5.3c6.7 0 11.7 3.8 13.3 9.8h-7.5C20.1 2.2 18 1 15.4 1c-4.2 0-7.1 3.1-7.1 8.1s2.9 8.1 7.1 8.1c2.6 0 4.7-1.2 5.9-3.6h7.5c-1.6 6.1-6.6 9.8-13.3 9.8-8.3 0-14.1-5.9-14.1-14.3C1.3.7 7.2-5.3 15.4-5.3z"
-                    transform="translate(79 66)" />
-                </g>
-              </g>
-            </g>
-          </svg>
-        </div>
-        <nav class="header__nav">
-          <ul>
-            <li><a href="#work" class="link-animate text-bold" rel="nofollow">Work</a></li>
-            <li><a href="dist/docs/cindy-chang-resume.pdf" class="link-animate text-bold" rel="nofollow">Resume</a></li>
-            <li><a href="#contact" class="link-animate text-bold" rel="nofollow">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <div class="hero">
-          <div class="hero__bg">
-            <h2 class="text-bg" class="text-bg">Hello</h2>
-          </div>
-          <div class="hero__intro text-center">
-            <h1 class="slide-up">I’m Cindy. I’m a <span class="underline">Front End Designer</span> living in the
-              Netherlands.</h1>
-          </div>
-        </div>
-        <a name="work" class="anchor-spacing"></a>
-        <div class="work">
-          <div class="work__sidebar text-white">
-            <h2 class="vertical">featured work</h2>
-          </div>
-          <div class="work__clients">
-            <a href="/work/ddl.html" rel="nofollow"><div class="project project--domino text-white"><h3 class="text-bold">Domino Data Lab</h3><p>Custom web design and development for multiple company websites.</p></div></a>
-            <a href="/work/sparkpost.html" rel="nofollow"><div class="project project--sp text-white"><h3 class="text-bold">SparkPost</h3><p>Page design and development for interactive pricing page.</p></div></a>
-            <a href="/work/apexcenter.html" rel="nofollow"><div class="project project--apex text-white"><h3 class="text-bold">Apex Youth Center</h3><p>Custom web design and development for New Orleans youth center.</p></div></a>
-            <a href="/work/hueandcry.html" rel="nofollow"><div class="project project--huecry text-white"><h3 class="text-bold">Hue and Cry</h3><p>Custom web design and development for a new true crime blog.</p></div></a>
-            <a href="/work/skateistan.html" rel="nofollow"><div class="project project--skate text-white"><h3 class="text-bold">Skateistan</h3><p>Design of collateral, social media graphics and web store assets.</p></div></a>
-            <a href="/work/katiegreen.html" rel="nofollow"><div class="project project--kg text-white"><h3 class="text-bold">Katie Green</h3><p>Web design and development for Canadian artist Katie Green.</p></div></a>
-          </div>
-        </div>
-      </main>
-        
-      <a name="contact"></a>
-      <footer class="footer--home">
-        <div class="seperator"></div>
-        <div class="contact--home text-center">
-          <h2>I work with clients big and small in a variety of different industries to bring ideas to life on the web.<br><br></h2>
-          <h3>If you would like to learn more feel, free to contact me at: <a
-              href="mailto:hello@cindychang.io">hello@cindychang.io</a></h3>
-        </div>
-        <div class="seperator"></div>
-      </footer>
+
+    <div class="navigation">
+      <div class="navigation__logo">
+        <span class="logo__text">cindychang.io</span>
+        <span class="logo__art"><img src="dist/img/logo_art.svg" alt="cindychang.io"></span>
+      </div>
+      <!-- <div class="nav__menu">
+        <ul class="nav">
+          <li>About Me</li>
+          <li>Work</li>
+          <li>Contact Me</li>
+        </ul>
+      </div> -->
     </div>
+
+    <header class="header">
+      <div class="header__nav">
+        <ul class="nav">
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Work</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="header__stamp">
+        <span class="text-stamp">hello</span>
+      </div>
+    </header>
+
 
     <script src="dist/scripts/app.js"></script>
   </body>

@@ -1,0 +1,49 @@
+.navigation {
+  padding: 4rem 6rem;
+
+  &__logo {
+    display: inline-block;
+
+    .logo__text {
+      font-family: var(--titleFont);
+      font-size: 1.6rem;
+      font-weight: 600;
+      display: block;
+    }
+
+    .logo__art {
+      display: block;
+      text-align: right;
+      margin-top: .3rem;
+    }
+  }
+}
+
+
+
+
+
+.nav {
+
+  list-style: none;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  li {
+    display: inline-block;
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+      a:link,
+      a:visited {
+        color: var(--black);
+      }
+  }
+
+
+
+}

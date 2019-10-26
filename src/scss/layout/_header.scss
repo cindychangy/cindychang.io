@@ -1,0 +1,22 @@
+.header {
+  padding: 3rem;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &__nav {
+    margin-right: 32rem;
+  }
+
+  
+  &__stamp {
+    position: absolute;
+    top: 5rem;
+    right: 5rem;
+    transform: rotate(-90deg);
+         // transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+  }
+}
