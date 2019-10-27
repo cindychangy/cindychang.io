@@ -1,27 +1,23 @@
 @mixin screen-sm {
-  @media only screen and (max-width: 48em) {
-    //576px	
+  @media(min-width: 576px) {
     @content;
   }
 }
 
 @mixin screen-md {
-  @media only screen and (max-width: 64em) {
-    //768px
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin screen-lg {
-  @media only screen and (max-width: 82.667em) {
-    //992px
+  @media (min-width: 992px) {
     @content;
   }
 }
 
 @mixin screen-xl {
-  @media only screen and (min-width: 82.667em) {
-    //min of 992px
+  @media (min-width: 1200px) {
     @content;
   }
 }
@@ -34,8 +30,3 @@
   }
 }
 
-@mixin flex-center {
-  display: flex;
-  align-items: center;
-  justify-content:center;
-}

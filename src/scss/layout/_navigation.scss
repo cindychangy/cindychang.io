@@ -1,10 +1,10 @@
 .navigation {
-  padding: 4rem 6rem;
+  padding: 3rem 2rem;
   display: flex;
   justify-content: space-between;
 
   @include screen-sm {
-    flex-direction: column;
+    padding: 4rem 6rem;
   }
 
   &__logo {
@@ -19,18 +19,70 @@
 
     .logo__art {
       display: block;
-      text-align: right;
+      text-align: left;
       margin-top: .3rem;
 
       @include screen-sm {
-        text-align: left;
+        text-align: right;
         margin-bottom: 2rem;
       }
     }
-
   }
 }
 
+.navigation__menu {
+  cursor: pointer;
+
+  #nav-toggle {
+    opacity: 0;
+
+    &:checked~.nav {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .navigation__button {
+    position: relative;
+    top: 10px;
+    display: block;
+
+    @include screen-sm {
+      display: none;
+    }
+  }
+
+  .nav__icon {
+    position: relative;
+    cursor: pointer;
+
+    &,
+    &::before,
+    &::after {
+      height: 2px;
+      width: 4rem;
+      background: var(--black);
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -8px;
+      width: 3rem;
+    }
+
+    &::after {
+      bottom: -8px;
+      width: 2rem;
+    }
+  }
+}
 
 .nav {
   list-style: none;
@@ -38,9 +90,20 @@
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+  opacity: 0;
+  visibility: hidden;
+
+    @include screen-sm {
+      opacity: 1;
+      visibility: visible;
+    }
 
   li {
-    display: inline-block;
+    display: block;
+
+    @include screen-sm {
+      display: inline-block;
+    }
 
     &:not(:last-child) {
       margin-right: 1.5rem;
@@ -52,13 +115,7 @@
     }
   }
 
-  &--sub {
+  &--alt {
     font-size: 1.3rem;
-
-    li {
-      @include screen-sm {
-        display: block;
-      }
-    }
   }
 }
