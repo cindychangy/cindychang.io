@@ -41,6 +41,9 @@ a {
   background: var(--pink);
   color: #fff; }
 
+a {
+  color: var(--black); }
+
 h2 {
   font-family: var(--titleFont);
   font-size: 3rem;
@@ -113,7 +116,12 @@ h2 {
     transform: rotate(-90deg); }
 
 .navigation {
-  padding: 4rem 6rem; }
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-between; }
+  @media only screen and (max-width: 48em) {
+    .navigation {
+      flex-direction: column; } }
   .navigation__logo {
     display: inline-block; }
     .navigation__logo .logo__text {
@@ -125,6 +133,10 @@ h2 {
       display: block;
       text-align: right;
       margin-top: .3rem; }
+      @media only screen and (max-width: 48em) {
+        .navigation__logo .logo__art {
+          text-align: left;
+          margin-bottom: 2rem; } }
 
 .nav {
   list-style: none;
@@ -139,6 +151,11 @@ h2 {
     .nav li a:link,
     .nav li a:visited {
       color: var(--black); }
+  .nav--sub {
+    font-size: 1.3rem; }
+    @media only screen and (max-width: 48em) {
+      .nav--sub li {
+        display: block; } }
 
 .footer {
   position: relative;

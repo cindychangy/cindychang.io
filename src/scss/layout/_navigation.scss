@@ -1,5 +1,11 @@
 .navigation {
   padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include screen-sm {
+    flex-direction: column;
+  }
 
   &__logo {
     display: inline-block;
@@ -15,7 +21,13 @@
       display: block;
       text-align: right;
       margin-top: .3rem;
+
+      @include screen-sm {
+        text-align: left;
+        margin-bottom: 2rem;
+      }
     }
+
   }
 }
 
@@ -37,6 +49,16 @@
     a:link,
     a:visited {
       color: var(--black);
+    }
+  }
+
+  &--sub {
+    font-size: 1.3rem;
+
+    li {
+      @include screen-sm {
+        display: block;
+      }
     }
   }
 }
