@@ -4,7 +4,7 @@
   justify-content: space-between;
 
   @include screen-sm {
-    padding: 4rem 6rem;
+    padding: 4rem 14rem;
   }
 
   &__logo {
@@ -43,8 +43,6 @@
   }
 
   .navigation__button {
-    position: relative;
-    top: 10px;
     display: block;
 
     @include screen-sm {
@@ -117,5 +115,7 @@
 
   &--alt {
     font-size: 1.3rem;
+    position: relative;
+    top: -14px;
   }
 }

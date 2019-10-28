@@ -2,7 +2,7 @@
   --purple: #3D43A6;
   --black: #232431;
   --pink: #ff059d;
-  --gray: #eceff2;
+  --gray: #838994;
   --coral: #FBABA8;
   --orange: #FF8B5C;
   --green: #32C632;
@@ -44,8 +44,14 @@ a {
 a {
   color: var(--black); }
 
+h1,
 h2 {
-  font-family: var(--titleFont);
+  font-family: var(--titleFont); }
+
+h1 {
+  font-size: 5.6rem; }
+
+h2 {
   font-size: 3rem;
   line-height: 1.3; }
 
@@ -59,6 +65,11 @@ h2 {
   font-weight: 700;
   font-size: 33rem;
   line-height: 1; }
+
+p {
+  font-family: var(--bodyFont);
+  font-size: 1.9rem;
+  line-height: 1.3; }
 
 .row {
   max-width: 114rem;
@@ -121,7 +132,7 @@ h2 {
   justify-content: space-between; }
   @media (min-width: 576px) {
     .navigation {
-      padding: 4rem 6rem; } }
+      padding: 4rem 14rem; } }
   .navigation__logo {
     display: inline-block; }
     .navigation__logo .logo__text {
@@ -146,8 +157,6 @@ h2 {
       opacity: 1;
       visibility: visible; }
   .navigation__menu .navigation__button {
-    position: relative;
-    top: 10px;
     display: block; }
     @media (min-width: 576px) {
       .navigation__menu .navigation__button {
@@ -194,7 +203,9 @@ h2 {
     .nav li a:visited {
       color: var(--black); }
   .nav--alt {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    position: relative;
+    top: -14px; }
 
 .footer {
   position: relative;
@@ -207,7 +218,7 @@ h2 {
     transform: translateX(-50%); }
 
 .work {
-  padding: 9rem 0;
+  padding: 9rem;
   display: flex; }
   .work__clients {
     padding-left: 6rem;
@@ -251,7 +262,37 @@ h2 {
     right: 20%;
     background: var(--coral); }
 
-/* Work */
+.project {
+  padding: 6rem 14rem;
+  background: #f0f2f4; }
+  .project__summary {
+    text-align: right; }
+    .project__summary p {
+      color: var(--gray); }
+  .project__details {
+    margin-top: 6rem;
+    display: flex; }
+    .project__details .project-title {
+      flex: 0 0 15%; }
+      .project__details .project-title h1 {
+        writing-mode: vertical-rl;
+        line-height: 1; }
+      .project__details .project-title .project-line--vertical {
+        border-left: 1px solid var(--black);
+        height: 200px;
+        margin: 2rem 0 0 2.4rem; }
+      .project__details .project-title .project-line--horizontal {
+        border-top: 1px solid var(--black);
+        height: 1px;
+        width: 200px;
+        display: inline-block; }
+    .project__details .project__images {
+      text-align: right; }
+      .project__details .project__images img {
+        max-width: 90%; }
+        .project__details .project__images img:not(:first-child) {
+          margin-top: 4rem; }
+
 .contact {
   margin: 10rem auto;
   width: 40%;

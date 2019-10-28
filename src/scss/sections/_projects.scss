@@ -1,95 +1,52 @@
-/* Work */
-// .work {
-//   display: grid;
-//   grid-template-columns: 8rem 1fr;
-//   grid-gap: 6rem;
-// }
+.project {
+  padding: 6rem 14rem;
+  background: #f0f2f4;
 
-// .work__sidebar {
-//   background: var(--purple);
-//   display: flex;
-//   justify-content: center;
-//   align-items: flex-end;
-//   padding-bottom: 3rem;
-// }
+  &__summary {
+    text-align: right;
 
-// .work__clients {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 2rem;
-// }
+    p {
+      color: var(--gray);
+    }
+  }
 
-// .project {
-//   height: 400px;
-//   padding: 2em;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-end;
-// }
+  &__details {
+    margin-top: 6rem;
+    display: flex;
 
-// .project:hover {
-//   -webkit-animation: shadow-drop-2-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-//   animation: shadow-drop-2-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-// }
+    .project-title {
+      flex: 0 0 15%;
 
-// .project--domino {
-//   background: url('../../dist/img/cover-domino.png') no-repeat center;
-//   background-size: cover;
-//   background-color: var(--black);
-// }
+        h1 {
+          writing-mode: vertical-rl;
+          line-height: 1;
+        }
 
-// .project--sp {
-//   background: url('../../dist/img/cover-sp.png') no-repeat center;
-//   background-size: 155px 300px;
-//   background-color: var(--orange);
-//   background-position-y: 20px;
-// }
+        .project-line {
+          &--vertical {
+            border-left: 1px solid var(--black);
+            height: 200px;
+            margin: 2rem 0 0 2.4rem;
+          }
 
-// .project--apex {
-//   background: url('../../dist/img/cover-apex.png') no-repeat top;
-//   background-size: cover;
-// }
+          &--horizontal {
+            border-top: 1px solid var(--black);
+            height: 1px;
+            width: 200px;
+            display: inline-block;
+          }
+        }
+    }
 
-// .project--huecry {
-//   background: url('../../dist/img/cover-huecry.png') no-repeat top;
-//   background-size: cover;
-//   background-size: 390px 253px;
-//   background-position-y: 50px;
-//   background-color: var(--blue);
-// }
+    .project__images {
+      text-align: right;
+      img {
+        max-width: 90%;
 
-// .project--skate {
-//   background: url('../../dist/img/cover-skate.png') no-repeat center;
-//   background-size: 341px 204px;
-//   background-position-y: 50px;
-//   background-color: var(--green);
-// }
-
-// .project--kg {
-//   background: url('../../dist/img/cover-kg.png') no-repeat center;
-//   background-size: cover;
-// }
-
-// .project-page {
-//   -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-//   animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-// }
-
-// .project-page__summary {
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   grid-gap: 1rem;
-//   align-items: center;
-//   max-width: 74%;
-//   margin: 7rem auto 7rem auto;
-// }
-
-// .project-image {
-//   background: var(--gray);
-//   margin-bottom: 2rem;
-//   padding: 4rem 0;
-// }
-
-// .project-image img {
-//   max-width: 60%;
-// }
+        &:not(:first-child) {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
