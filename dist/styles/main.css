@@ -1,12 +1,12 @@
 :root {
-  --purple: #3D43A6;
+  --purple: #2a2f81;
   --black: #232431;
   --pink: #ff059d;
   --gray: #838994;
-  --coral: #FBABA8;
-  --orange: #FF8B5C;
-  --green: #32C632;
-  --teal: #25C7EB;
+  --coral: #fbabab;
+  --orange: #ff8b5c;
+  --green: #32c632;
+  --teal: #25c7eb;
   --white: #fff;
   --titleFont: 'Poppins', sans-serif;
   --bodyFont: 'Muli', sans-serif; }
@@ -477,8 +477,13 @@ p {
       @media (min-width: 768px) {
         .bio__content__icons {
           text-align: right; } }
-      .bio__content__icons svg:not(:last-child) {
-        margin-right: 0.5rem; }
+      .bio__content__icons a:not(:last-child) {
+        margin-right: 1rem; }
+      .bio__content__icons a svg {
+        transition: all .2s; }
+        .bio__content__icons a svg:hover {
+          opacity: 0.5;
+          transform: translateY(-2px); }
     .bio__content__text {
       background-color: var(--purple); }
       .bio__content__text h2 {
