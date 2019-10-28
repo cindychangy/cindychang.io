@@ -36,6 +36,11 @@ p {
 .text-stamp {
   font-family: var(--titleFont);
   font-weight: 700;
-  font-size: 33rem;
+  font-size: 9rem;
   line-height: 1;
+  position: relative;
+
+    @include screen-md {
+      font-size: 33rem;
+    }
 }

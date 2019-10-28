@@ -1,18 +1,19 @@
 .navigation {
   width: 100%;
   background-color: var(--white);
-  position: fixed;
-  height: 10rem;
+  height: 11rem;
   padding: 3rem 2rem;
+  position: relative;
   display: flex;
   justify-content: space-between;
 
-  @include screen-sm {
+  @include screen-md {
     padding: 4rem 14rem;
   }
 
   &__logo {
-    display: inline-block;
+    position: relative;
+    top: -10px;
 
     .logo__text {
       font-family: var(--titleFont);
@@ -26,63 +27,26 @@
       text-align: left;
       margin-top: .3rem;
 
-      @include screen-sm {
+      @include screen-md {
         text-align: right;
-        margin-bottom: 2rem;
       }
     }
   }
-}
 
-.navigation__menu {
-  cursor: pointer;
+  &__back:hover {
 
-  #nav-toggle {
-    opacity: 0;
+    svg {
+      transition: all .3s;
 
-    &:checked~.nav {
-      opacity: 1;
-      visibility: visible;
+      &:hover {
+        transform: translateX(-6px);
+        opacity: 0.4;
+      }
     }
   }
 
-  .navigation__button {
-    display: block;
-
-    @include screen-sm {
-      display: none;
-    }
-  }
-
-  .nav__icon {
-    position: relative;
-    cursor: pointer;
-
-    &,
-    &::before,
-    &::after {
-      height: 2px;
-      width: 4rem;
-      background: var(--black);
-      display: inline-block;
-    }
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-    }
-
-    &::before {
-      top: -8px;
-      width: 3rem;
-    }
-
-    &::after {
-      bottom: -8px;
-      width: 2rem;
-    }
+  &--alt {
+    position: fixed;
   }
 }
 
@@ -92,10 +56,8 @@
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
-  opacity: 0;
-  visibility: hidden;
 
-    @include screen-sm {
+    @include screen-md {
       opacity: 1;
       visibility: visible;
     }
@@ -103,7 +65,7 @@
   li {
     display: block;
 
-    @include screen-sm {
+    @include screen-md {
       display: inline-block;
     }
 
@@ -115,11 +77,5 @@
     a:visited {
       color: var(--black);
     }
-  }
-
-  &--alt {
-    font-size: 1.3rem;
-    position: relative;
-    top: -14px;
   }
 }

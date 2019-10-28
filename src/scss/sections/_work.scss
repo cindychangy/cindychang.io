@@ -1,46 +1,44 @@
 .work {
-  padding: 9rem;
-  display: flex;
+  margin-top: 12rem;
+  padding: 0 9rem;
+  display: block;
 
-  &__clients {
-    padding-left: 6rem;
-    list-style: none;
-    font-size: 2rem;
-    flex: 0 0 35%;
-
-      .client-list {
-        list-style: none;
-
-        li {
-          & a:link,
-          & a:visited {
-            color: var(--black);
-          }
-
-          &:not(:last-child) {
-            margin-bottom: 2.5rem;
-          }
-        }
-      }
-    }
+  @include screen-md {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__art {
-    flex: 1;
+    flex: 0 0 70%;
     display: flex;
     justify-content: center;
     position: relative;
   }
+}
 
+.client {
+  padding-left: 6rem;
+  list-style: none;
+  font-size: 2rem;
+  max-width: 40rem;
+  transition: all .2s;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }
 
 .shape {
-      position: absolute;
+  position: absolute;
+  transition: all .4s;
+  overflow: hidden;
 
   &--1 {
     height: 45rem;
     width: 45rem;
     border-radius: 50%;
-    left: 30%;
+    right: 0;
+    bottom: 0;
     background-color: var(--purple);
   }
 
@@ -49,18 +47,58 @@
     width: 40rem;
     clip-path: circle(48.2% at 0 52%);
     background-color: var(--teal);
-    left: 15%;
-    bottom: -70%;
-    transform: rotate(70deg);
+    right: 15.6rem;
+    bottom: -15.9rem;
+    transform: rotate(56deg);
     z-index: 3;
-
   }
 
   &--3 {
     height: 28rem;
     width: 28rem;
-    bottom: -30%;
-    right: 20%;
+    bottom: -3rem;
+    right: -5rem;
     background: var(--coral);
   }
 }
+
+//client hovers
+.client--circle:hover ~ .work__art {
+  .shape--1 {
+    background-color: #000;
+    z-index: 99;
+    transform: scale(1.05) translateY(-.5rem);
+  }
+
+  .shape--2,
+  .shape--3 {
+    background-color: #f2f2f2;
+  }
+}
+
+.client--square:hover~.work__art {
+  .shape--3 {
+    background-color: #000;
+    z-index: 99;
+    transform: scale(1.05) translateY(-.5rem);
+  }
+
+  .shape--1,
+  .shape--2 {
+    background-color: #f2f2f2;
+  }
+}
+
+.client--semi:hover~.work__art {
+  .shape--2 {
+    background-color: #000;
+    z-index: 99;
+    transform: scale(1.05) rotate(56deg);
+  }
+
+  .shape--1,
+  .shape--3 {
+    background-color: #f2f2f2;
+  }
+}
+
