@@ -40,7 +40,7 @@ p {
   line-height: 1;
   position: relative;
 
-    @include screen-md {
+    @include screen-lg {
       font-size: 33rem;
     }
 }

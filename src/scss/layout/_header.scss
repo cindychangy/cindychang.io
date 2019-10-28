@@ -1,10 +1,10 @@
 .header {
-  padding: 3rem;
-  min-height: 50vh;
   width: 100%;
   display: block;
+  text-align: center;
 
-  @include screen-md {
+  @include screen-lg {
+    padding: 3rem;
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -13,22 +13,28 @@
   }
 
   &__nav {
-    margin: -14rem 32rem 0 0;
+    margin: 6rem auto;
+
+    @include screen-lg {
+      margin: -14rem 32rem 0 0;
+    }
   }
   
   &__stamp {
     position: relative;
     transform: rotate(0);
     text-align: center;
-    margin-top: 10rem;
+  
+    @include screen-lg {
+      transform: rotate(-90deg);
+      position: absolute;
+      top: 16rem;
+      right: -10%;
+    }
     
-      @include screen-md {
-        transform: rotate(-90deg);
-        position: absolute;
-        top: 16rem;
-        right: 5rem;
-        margin-top: 0;
-      }
+    @include screen-xl {
+      right: 6%;
+    }
   }
 }
 

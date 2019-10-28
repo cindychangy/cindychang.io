@@ -2,12 +2,12 @@
   width: 100%;
   background-color: var(--white);
   height: 11rem;
-  padding: 3rem 2rem;
+  padding: 3rem;
   position: relative;
   display: flex;
   justify-content: space-between;
 
-  @include screen-md {
+  @include screen-lg {
     padding: 4rem 14rem;
   }
 
@@ -34,7 +34,6 @@
   }
 
   &__back:hover {
-
     svg {
       transition: all .3s;
 
@@ -57,20 +56,12 @@
   text-transform: uppercase;
   letter-spacing: 1px;
 
-    @include screen-md {
-      opacity: 1;
-      visibility: visible;
-    }
-
   li {
     display: block;
 
     @include screen-md {
       display: inline-block;
-    }
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
+      margin-right: 2.5rem;
     }
 
     a:link,

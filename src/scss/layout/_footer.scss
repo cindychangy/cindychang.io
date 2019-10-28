@@ -1,12 +1,21 @@
 .footer {
   position: relative;
-  height: 20rem;
   overflow: hidden;
+  text-align: center;
+
+  @include screen-sm {
+    height: 20rem;
+  }
 
   .text-stamp {
-    position: absolute;
-    top: -1.3rem;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    top: 0;
+
+    @include screen-md {
+      position: absolute;
+      top: -1.3rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }

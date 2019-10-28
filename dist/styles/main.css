@@ -79,7 +79,7 @@ p {
   font-size: 9rem;
   line-height: 1;
   position: relative; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .text-stamp {
       font-size: 33rem; } }
 
@@ -155,31 +155,35 @@ p {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
 
 .header {
-  padding: 3rem;
-  min-height: 50vh;
   width: 100%;
-  display: block; }
-  @media (min-width: 768px) {
+  display: block;
+  text-align: center; }
+  @media (min-width: 992px) {
     .header {
+      padding: 3rem;
       min-height: 90vh;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden; } }
   .header__nav {
-    margin: -14rem 32rem 0 0; }
+    margin: 6rem auto; }
+    @media (min-width: 992px) {
+      .header__nav {
+        margin: -14rem 32rem 0 0; } }
   .header__stamp {
     position: relative;
     transform: rotate(0);
-    text-align: center;
-    margin-top: 10rem; }
-    @media (min-width: 768px) {
+    text-align: center; }
+    @media (min-width: 992px) {
       .header__stamp {
         transform: rotate(-90deg);
         position: absolute;
         top: 16rem;
-        right: 5rem;
-        margin-top: 0; } }
+        right: -10%; } }
+    @media (min-width: 1200px) {
+      .header__stamp {
+        right: 6%; } }
 
 .back {
   display: inline-block; }
@@ -191,11 +195,11 @@ p {
   width: 100%;
   background-color: var(--white);
   height: 11rem;
-  padding: 3rem 2rem;
+  padding: 3rem;
   position: relative;
   display: flex;
   justify-content: space-between; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .navigation {
       padding: 4rem 14rem; } }
   .navigation__logo {
@@ -227,83 +231,121 @@ p {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px; }
-  @media (min-width: 768px) {
-    .nav {
-      opacity: 1;
-      visibility: visible; } }
   .nav li {
     display: block; }
     @media (min-width: 768px) {
       .nav li {
-        display: inline-block; } }
-    .nav li:not(:last-child) {
-      margin-right: 1.5rem; }
+        display: inline-block;
+        margin-right: 2.5rem; } }
     .nav li a:link,
     .nav li a:visited {
       color: var(--black); }
 
 .footer {
   position: relative;
-  height: 20rem;
-  overflow: hidden; }
+  overflow: hidden;
+  text-align: center; }
+  @media (min-width: 576px) {
+    .footer {
+      height: 20rem; } }
   .footer .text-stamp {
-    position: absolute;
-    top: -1.3rem;
-    left: 50%;
-    transform: translateX(-50%); }
+    position: relative;
+    top: 0; }
+    @media (min-width: 768px) {
+      .footer .text-stamp {
+        position: absolute;
+        top: -1.3rem;
+        left: 50%;
+        transform: translateX(-50%); } }
 
 #work {
   height: 2rem; }
 
 .work {
-  margin-top: 12rem;
-  padding: 0 9rem;
-  display: block; }
-  @media (min-width: 768px) {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 992px) {
     .work {
-      display: flex;
-      flex-direction: column; } }
+      margin-top: 12rem;
+      flex-direction: column;
+      padding: 0 14rem; } }
   .work__art {
-    flex: 0 0 70%;
-    display: flex;
-    justify-content: center;
-    position: relative; }
+    position: relative;
+    margin: auto;
+    height: 248px;
+    order: 1; }
+    @media (min-width: 992px) {
+      .work__art {
+        margin: 0;
+        height: auto; } }
 
 .client {
-  padding-left: 6rem;
-  list-style: none;
-  font-size: 2rem;
+  font-size: 2.4rem;
   max-width: 40rem;
-  transition: all .2s; }
+  transition: all .2s;
+  font-weight: 200;
+  order: 2; }
+  @media (min-width: 992px) {
+    .client {
+      order: 1; } }
   .client:not(:last-child) {
     margin-bottom: 2rem; }
 
 .shape {
-  position: absolute;
+  position: relative;
   transition: all .4s;
   overflow: hidden; }
+  @media (min-width: 992px) {
+    .shape {
+      position: absolute; } }
   .shape--1 {
-    height: 45rem;
-    width: 45rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
-    right: 0;
-    bottom: 0;
     background-color: var(--purple); }
+    @media (min-width: 992px) {
+      .shape--1 {
+        right: 0;
+        bottom: 0;
+        height: 26rem;
+        width: 26rem; } }
+    @media (min-width: 1200px) {
+      .shape--1 {
+        height: 45rem;
+        width: 45rem; } }
   .shape--2 {
-    height: 40rem;
-    width: 40rem;
+    height: 18rem;
+    width: 18rem;
     clip-path: circle(48.2% at 0 52%);
     background-color: var(--teal);
-    right: 15.6rem;
-    bottom: -15.9rem;
     transform: rotate(56deg);
-    z-index: 3; }
+    z-index: 3;
+    bottom: 6rem; }
+    @media (min-width: 992px) {
+      .shape--2 {
+        right: 15.6rem;
+        bottom: -15.9rem;
+        height: 30rem;
+        width: 30rem; } }
+    @media (min-width: 1200px) {
+      .shape--2 {
+        height: 40rem;
+        width: 40rem; } }
   .shape--3 {
-    height: 28rem;
-    width: 28rem;
-    bottom: -3rem;
-    right: -5rem;
-    background: var(--coral); }
+    height: 12rem;
+    width: 12rem;
+    background: var(--coral);
+    bottom: 26rem;
+    right: -10rem; }
+    @media (min-width: 992px) {
+      .shape--3 {
+        bottom: -3rem;
+        right: -5rem; } }
+    @media (min-width: 1200px) {
+      .shape--3 {
+        height: 28rem;
+        width: 28rem; } }
 
 .client--circle:hover ~ .work__art .shape--1 {
   background: linear-gradient(to right, red, blue), url("/dist/img/domino-cover.png");
@@ -315,13 +357,13 @@ p {
 .client--circle:hover ~ .work__art .shape--3 {
   background-color: #f2f2f2; }
 
-.client--square:hover ~ .work__art .shape--3 {
+.thing ~ .client--square:hover ~ .work__art .shape--3 {
   background-color: #000;
   z-index: 99;
   transform: scale(1.05) translateY(-0.5rem); }
 
-.client--square:hover ~ .work__art .shape--1,
-.client--square:hover ~ .work__art .shape--2 {
+.thing ~ .client--square:hover ~ .work__art .shape--1,
+.thing ~ .client--square:hover ~ .work__art .shape--2 {
   background-color: #f2f2f2; }
 
 .client--semi:hover ~ .work__art .shape--2 {
@@ -383,11 +425,12 @@ p {
           margin-top: 4rem; }
 
 .contact {
-  margin: 10rem auto;
+  margin: 3rem auto;
   width: 85%;
   text-align: center; }
   @media (min-width: 768px) {
     .contact {
+      margin: 10rem auto;
       width: 40%; } }
   .contact__line {
     height: 240px;

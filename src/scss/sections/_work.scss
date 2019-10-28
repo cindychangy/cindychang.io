@@ -3,29 +3,39 @@
 }
 
 .work {
-  margin-top: 12rem;
-  padding: 0 9rem;
-  display: block;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
 
-  @include screen-md {
-    display: flex;
+  @include screen-lg {
+    margin-top: 12rem;
     flex-direction: column;
+    padding: 0 14rem;
   }
 
   &__art {
-    flex: 0 0 70%;
-    display: flex;
-    justify-content: center;
     position: relative;
+    margin: auto;
+    height: 248px;
+    order: 1;
+
+    @include screen-lg {
+      margin: 0;
+      height: auto;
+    }
   }
 }
 
 .client {
-  padding-left: 6rem;
-  list-style: none;
-  font-size: 2rem;
+  font-size: 2.4rem;
   max-width: 40rem;
   transition: all .2s;
+  font-weight: 200;
+  order: 2;
+
+  @include screen-lg {
+    order: 1;
+  }
 
   &:not(:last-child) {
     margin-bottom: 2rem;
@@ -33,36 +43,71 @@
 }
 
 .shape {
-  position: absolute;
+  position: relative;
   transition: all .4s;
   overflow: hidden;
 
+  @include screen-lg {
+    position: absolute;
+  }
+
   &--1 {
-    height: 45rem;
-    width: 45rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
-    right: 0;
-    bottom: 0;
     background-color: var(--purple);
+
+    @include screen-lg {
+      right: 0;
+      bottom: 0;
+      height: 26rem;
+      width: 26rem;
+    }
+
+    @include screen-xl {
+      height: 45rem;
+      width: 45rem;
+    }
   }
 
   &--2 {
-    height: 40rem;
-    width: 40rem;
+    height: 18rem;
+    width: 18rem;
     clip-path: circle(48.2% at 0 52%);
     background-color: var(--teal);
-    right: 15.6rem;
-    bottom: -15.9rem;
     transform: rotate(56deg);
     z-index: 3;
+    bottom: 6rem;
+
+    @include screen-lg {
+      right: 15.6rem;
+      bottom: -15.9rem;
+      height: 30rem;
+      width: 30rem;
+    }
+
+    @include screen-xl {
+      height: 40rem;
+      width: 40rem;
+    }
   }
 
   &--3 {
-    height: 28rem;
-    width: 28rem;
-    bottom: -3rem;
-    right: -5rem;
+    height: 12rem;
+    width: 12rem;
     background: var(--coral);
+    bottom: 26rem;
+    right: -10rem;
+
+    @include screen-lg {
+      bottom: -3rem;
+      right: -5rem;
+    }
+
+    @include screen-xl {
+      height: 28rem;
+      width: 28rem;
+    }
   }
 }
 
@@ -82,7 +127,7 @@
   }
 }
 
-.client--square:hover~.work__art {
+.thing ~ .client--square:hover~.work__art {
   .shape--3 {
     background-color: #000;
     z-index: 99;

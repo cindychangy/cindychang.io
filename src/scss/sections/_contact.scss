@@ -1,9 +1,10 @@
 .contact {
-  margin: 10rem auto;
+  margin: 3rem auto;
   width: 85%;
   text-align: center;
 
   @include screen-md {
+    margin: 10rem auto;
     width: 40%;
   }
 
