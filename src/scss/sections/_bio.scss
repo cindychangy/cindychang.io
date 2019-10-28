@@ -23,12 +23,17 @@
 
   &__content {
     background-color: var(--purple);
-    width: 70%;
-    padding: 8rem;
+    width: 100%;
+    padding: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include screen-lg {
+      padding: 8rem;
+      width: 70%;
+    }
 
      &__icons {
        text-align: center;
@@ -49,14 +54,22 @@
        background-color: var(--purple);
 
        h2 {
-         width: 40%;
+         width: 100%;
+
+         @include screen-xl {
+           max-width: 40%;
+         }
        }
 
        p {
          margin: 3rem 0;
-         column-count: 2;
-         column-gap: 4rem;
          hyphens: auto;
+         column-count: 1;
+
+         @include screen-lg {
+          column-count: 2;
+          column-gap: 4rem;
+         }
        }
      }
 

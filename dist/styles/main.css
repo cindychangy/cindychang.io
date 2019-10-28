@@ -167,7 +167,7 @@ p {
       justify-content: center;
       overflow: hidden; } }
   .header__nav {
-    margin-right: 32rem; }
+    margin: -14rem 32rem 0 0; }
   .header__stamp {
     position: relative;
     transform: rotate(0);
@@ -252,6 +252,9 @@ p {
     left: 50%;
     transform: translateX(-50%); }
 
+#work {
+  height: 2rem; }
+
 .work {
   margin-top: 12rem;
   padding: 0 9rem;
@@ -303,7 +306,8 @@ p {
     background: var(--coral); }
 
 .client--circle:hover ~ .work__art .shape--1 {
-  background-color: #000;
+  background: linear-gradient(to right, red, blue), url("/dist/img/domino-cover.png");
+  background-blend-mode: screen;
   z-index: 99;
   transform: scale(1.05) translateY(-0.5rem); }
 
@@ -414,12 +418,16 @@ p {
     opacity: 1; }
   .bio__content {
     background-color: var(--purple);
-    width: 70%;
-    padding: 8rem;
+    width: 100%;
+    padding: 5rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    @media (min-width: 992px) {
+      .bio__content {
+        padding: 8rem;
+        width: 70%; } }
     .bio__content__icons {
       text-align: center;
       margin-bottom: 2rem; }
@@ -431,12 +439,18 @@ p {
     .bio__content__text {
       background-color: var(--purple); }
       .bio__content__text h2 {
-        width: 40%; }
+        width: 100%; }
+        @media (min-width: 1200px) {
+          .bio__content__text h2 {
+            max-width: 40%; } }
       .bio__content__text p {
         margin: 3rem 0;
-        column-count: 2;
-        column-gap: 4rem;
-        hyphens: auto; }
+        hyphens: auto;
+        column-count: 1; }
+        @media (min-width: 992px) {
+          .bio__content__text p {
+            column-count: 2;
+            column-gap: 4rem; } }
     .bio__content__close a {
       font-size: 2rem;
       position: absolute;

@@ -1,3 +1,7 @@
+#work {
+  height: 2rem;
+}
+
 .work {
   margin-top: 12rem;
   padding: 0 9rem;
@@ -65,7 +69,9 @@
 //client hovers
 .client--circle:hover ~ .work__art {
   .shape--1 {
-    background-color: #000;
+    background: linear-gradient(to right, red, blue),
+    url('/dist/img/domino-cover.png');
+    background-blend-mode: screen;
     z-index: 99;
     transform: scale(1.05) translateY(-.5rem);
   }
@@ -101,4 +107,11 @@
     background-color: #f2f2f2;
   }
 }
+
+
+// background: linear-gradient(to right, #4b17c8, #291677),
+// url(/dist/img/domino-cover.png);
+// z-index: 99;
+// transform: scale(1.05) translateY(-0.5rem);
+// background-blend-mode: lighten;
 
