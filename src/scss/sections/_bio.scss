@@ -1,0 +1,34 @@
+.bio {
+  background-color: var(--purple);
+  color: var(--white);
+  margin: auto;
+  max-width: 90%;
+  padding: 30rem;
+
+  &__icons {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @include screen-md {
+      text-align: right;
+    }
+
+    svg {
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__content {
+
+    .bio-text {
+      p {
+        margin: 3rem 0;
+        column-count: 2;
+        column-gap: 4rem;
+        hyphens: auto;
+      }
+    }
+  }
+}
