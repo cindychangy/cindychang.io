@@ -7,6 +7,7 @@
   --orange: #FF8B5C;
   --green: #32C632;
   --teal: #25C7EB;
+  --white: #fff;
   --titleFont: 'Poppins', sans-serif;
   --bodyFont: 'Muli', sans-serif; }
 
@@ -127,6 +128,10 @@ p {
     transform: rotate(-90deg); }
 
 .navigation {
+  width: 100%;
+  background-color: var(--white);
+  position: fixed;
+  height: 10rem;
   padding: 3rem 2rem;
   display: flex;
   justify-content: space-between; }
@@ -263,31 +268,49 @@ p {
     background: var(--coral); }
 
 .project {
-  padding: 6rem 14rem;
-  background: #f0f2f4; }
+  padding: 3rem;
+  background: #f5f8fb; }
+  @media (min-width: 576px) {
+    .project {
+      padding: 6rem 14rem; } }
   .project__summary {
-    text-align: right; }
+    text-align: left;
+    margin-top: 10rem; }
+    @media (min-width: 576px) {
+      .project__summary {
+        text-align: right; } }
     .project__summary p {
       color: var(--gray); }
   .project__details {
-    margin-top: 6rem;
-    display: flex; }
+    margin-top: 2rem;
+    display: block; }
+    @media (min-width: 576px) {
+      .project__details {
+        margin-top: 6rem; } }
+    @media (min-width: 576px) {
+      .project__details {
+        display: flex; } }
     .project__details .project-title {
       flex: 0 0 15%; }
       .project__details .project-title h1 {
-        writing-mode: vertical-rl;
+        writing-mode: initial;
         line-height: 1; }
+        @media (min-width: 576px) {
+          .project__details .project-title h1 {
+            writing-mode: vertical-rl; } }
       .project__details .project-title .project-line--vertical {
-        border-left: 1px solid var(--black);
-        height: 200px;
+        border-left: 0;
+        height: 3rem;
         margin: 2rem 0 0 2.4rem; }
-      .project__details .project-title .project-line--horizontal {
-        border-top: 1px solid var(--black);
-        height: 1px;
-        width: 200px;
-        display: inline-block; }
+        @media (min-width: 576px) {
+          .project__details .project-title .project-line--vertical {
+            border-left: 1px solid var(--black);
+            height: 200px; } }
     .project__details .project__images {
-      text-align: right; }
+      text-align: center; }
+      @media (min-width: 576px) {
+        .project__details .project__images {
+          text-align: right; } }
       .project__details .project__images img {
         max-width: 90%; }
         .project__details .project__images img:not(:first-child) {

@@ -1,4 +1,8 @@
 .navigation {
+  width: 100%;
+  background-color: var(--white);
+  position: fixed;
+  height: 10rem;
   padding: 3rem 2rem;
   display: flex;
   justify-content: space-between;

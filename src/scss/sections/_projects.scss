@@ -1,9 +1,18 @@
 .project {
-  padding: 6rem 14rem;
-  background: #f0f2f4;
+  padding: 3rem;
+  background: #f5f8fb;
+
+  @include screen-sm {
+    padding: 6rem 14rem;
+  }
 
   &__summary {
-    text-align: right;
+    text-align: left;
+    margin-top: 10rem;
+
+    @include screen-sm {
+      text-align: right;
+    }
 
     p {
       color: var(--gray);
@@ -11,35 +20,49 @@
   }
 
   &__details {
-    margin-top: 6rem;
-    display: flex;
+    margin-top: 2rem;
+    display: block;
+
+    @include screen-sm {
+      margin-top: 6rem;
+    }
+
+    @include screen-sm {
+      display: flex;
+    }
 
     .project-title {
       flex: 0 0 15%;
 
         h1 {
-          writing-mode: vertical-rl;
+          writing-mode: initial;
           line-height: 1;
+
+          @include screen-sm {
+            writing-mode: vertical-rl;
+          }
         }
 
         .project-line {
           &--vertical {
-            border-left: 1px solid var(--black);
-            height: 200px;
+            border-left: 0;
+            height: 3rem;
             margin: 2rem 0 0 2.4rem;
-          }
 
-          &--horizontal {
-            border-top: 1px solid var(--black);
-            height: 1px;
-            width: 200px;
-            display: inline-block;
+            @include screen-sm {
+              border-left: 1px solid var(--black);
+              height: 200px;
+            }
           }
         }
     }
 
     .project__images {
-      text-align: right;
+      text-align: center;
+
+      @include screen-sm {
+        text-align: right;
+      }
       img {
         max-width: 90%;
 
