@@ -47,8 +47,7 @@
 
 .shape {
   position: relative;
-  transition: all .4s;
-  overflow: hidden;
+  transition: all .6s;
 
   @include screen-lg {
     position: absolute;
@@ -58,7 +57,7 @@
     height: 15rem;
     width: 15rem;
     border-radius: 50%;
-    background-color: var(--purple);
+    background: rgba(42, 47, 129, 1);
 
     @include screen-lg {
       right: 0;
@@ -115,13 +114,38 @@
 }
 
 //client hovers
-.client--circle:hover ~ .work__art {
+.client--1:hover~.work__art .shape--1 {
+  background: url('/dist/img/domino-cover.png') no-repeat;
+  background-size: 480px;
+}
+.client--2:hover~.work__art .shape--3 {
+  background: url('/dist/img/spark-cover.png') no-repeat;
+  background-size: 320px;
+}
+.client--3:hover~.work__art .shape--2 {
+  background: url('/dist/img/hue-cover.png') no-repeat;
+  background-size: 400px;
+}
+.client--4:hover~.work__art .shape--2 {
+  background: url('/dist/img/apex-cover.png') no-repeat;
+  background-size: 400px;
+}
+.client--5:hover~.work__art .shape--1 {
+  background: url('/dist/img/katie-cover.png') no-repeat;
+  background-size: 480px;
+}
+.client--6:hover~.work__art .shape--2 {
+  background: url('/dist/img/skate-cover.png') no-repeat;
+  background-size: 400px;
+}
+
+.client--5:hover~.work__art,
+.client--1:hover ~ .work__art {
+  
   .shape--1 {
-    background: linear-gradient(to right, red, blue),
-    url('/dist/img/domino-cover.png');
-    background-blend-mode: screen;
     z-index: 99;
-    transform: scale(1.05) translateY(-.5rem);
+    transform: scale(1.05);
+    overflow: hidden;
   }
 
   .shape--2,
@@ -130,11 +154,11 @@
   }
 }
 
-.thing ~ .client--square:hover~.work__art {
+.client--6:hover~.work__art,
+.client--3:hover~.work__art {
   .shape--3 {
-    background-color: #000;
     z-index: 99;
-    transform: scale(1.05) translateY(-.5rem);
+    transform: scale(1.05);
   }
 
   .shape--1,
@@ -143,23 +167,20 @@
   }
 }
 
-.client--semi:hover~.work__art {
+
+.client--2:hover~.work__art,
+.client--4:hover~.work__art,
+.client--8:hover~.work__art {
   .shape--2 {
-    background-color: #000;
-    z-index: 99;
+    background-size: 220px;
     transform: scale(1.05) rotate(56deg);
+    background-size: cover;
+    z-index: 99;
   }
 
   .shape--1,
-  .shape--3 {
+  .shape--2 {
     background-color: #f2f2f2;
   }
 }
-
-
-// background: linear-gradient(to right, #4b17c8, #291677),
-// url(/dist/img/domino-cover.png);
-// z-index: 99;
-// transform: scale(1.05) translateY(-0.5rem);
-// background-blend-mode: lighten;
 
