@@ -24,11 +24,15 @@
   &__content {
     background-color: var(--purple);
     width: 100%;
-    padding: 5rem;
+    padding: 1rem 2.2rem;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include screen-sm {
+      padding: 5rem;
+    }
 
     @include screen-lg {
       padding: 8rem;

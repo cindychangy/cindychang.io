@@ -7,30 +7,47 @@ h3 {
 
 
 h1 {
-  font-size: 5.6rem;
+  font-size: 3.6rem;
+
+  @include screen-sm {
+    font-size: 5.6rem;
+  }
 }
 
 h2 {
   font-size: 4.1rem;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 h3 {
-  font-size: 3rem;
-  line-height: 1.3;
+  font-size: 2.2rem;
+  line-height: 1.4;
+
+  @include screen-sm {
+    font-size: 3rem;
+    line-height: 1.3;
+  }
 }
 
 p {
   font-family: var(--bodyFont);
-  font-size: 1.9rem;
-  line-height: 1.3;
+  font-size: 1.7rem;
+  line-height: 1.4;
   font-weight: 200;
+
+  @include screen-sm {
+    font-size: 1.9rem;
+  }
 }
 
 .callout-text {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   line-height: 1.4;
   font-weight: 200;
+
+  @include screen-sm {
+    font-size: 2.2rem;
+  }
 }
 
 .text-stamp {

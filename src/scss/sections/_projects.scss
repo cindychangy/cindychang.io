@@ -1,8 +1,8 @@
 .project {
-  padding: 3rem;
+  padding: 3rem 4rem;
   background: #f5f8fb;
 
-  @include screen-sm {
+  @include screen-lg {
     padding: 6rem 14rem;
   }
 
@@ -34,6 +34,10 @@
     .project-title {
       flex: 0 0 15%;
 
+        @include screen-lg {
+          margin-left: 4.2rem;
+        }
+
         h1 {
           writing-mode: initial;
           line-height: 1;
@@ -64,7 +68,11 @@
         text-align: right;
       }
       img {
-        max-width: 90%;
+        max-width: 100%;
+
+        @include screen-sm {
+          max-width: 90%;
+        }
 
         &:not(:first-child) {
           margin-top: 4rem;

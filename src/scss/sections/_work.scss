@@ -27,11 +27,15 @@
 }
 
 .client {
-  font-size: 2.4rem;
-  max-width: 40rem;
+  font-size: 2rem;
   transition: all .2s;
   font-weight: 200;
   order: 2;
+
+  @include screen-md {
+    font-size: 2.4rem;
+    max-width: 40rem;
+  }
 
   @include screen-lg {
     order: 1;
