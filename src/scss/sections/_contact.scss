@@ -22,9 +22,15 @@
 
   a {
     font-weight: 400;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: 7px;
+    @include hover-underline;
   }
 
   p {
     padding-top: 4rem; 
+    line-height: 1;
   }
 }

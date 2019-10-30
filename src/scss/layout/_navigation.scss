@@ -71,6 +71,15 @@
     a:link,
     a:visited {
       color: var(--black);
+      display: inline-block;
+      overflow: hidden;
+      @include hover-underline;
     }
   }
+}
+
+.logo__art #zigzag {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 30s linear forwards;
 }

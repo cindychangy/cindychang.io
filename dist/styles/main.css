@@ -96,6 +96,12 @@ p {
     .text-stamp {
       font-size: 33rem; } }
 
+@keyframes stroke {
+  from {
+    stroke-dashoffset: 1000; }
+  to {
+    stroke-dashoffset: -1000; } }
+
 .btn {
   margin-bottom: 1rem; }
   .btn, .btn:link, .btn:visited {
@@ -254,7 +260,27 @@ p {
         margin-right: 2.5rem; } }
     .nav li a:link,
     .nav li a:visited {
-      color: var(--black); }
+      color: var(--black);
+      display: inline-block;
+      overflow: hidden; }
+      .nav li a:link:after,
+      .nav li a:visited:after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: var(--black);
+        transform: translateX(-100%);
+        margin-top: .2rem; }
+      .nav li a:link:hover:after,
+      .nav li a:visited:hover:after {
+        transform: translateX(0);
+        transition: all .4s; }
+
+.logo__art #zigzag {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 30s linear forwards; }
 
 .footer {
   position: relative;
@@ -302,8 +328,7 @@ p {
   order: 2; }
   @media (min-width: 768px) {
     .client {
-      font-size: 2.4rem;
-      max-width: 40rem; } }
+      font-size: 2.4rem; } }
   @media (min-width: 992px) {
     .client {
       order: 1; } }
@@ -465,9 +490,25 @@ p {
       .contact__line {
         height: 240px; } }
   .contact a {
-    font-weight: 400; }
+    font-weight: 400;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: 7px; }
+    .contact a:after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: var(--black);
+      transform: translateX(-100%);
+      margin-top: .2rem; }
+    .contact a:hover:after {
+      transform: translateX(0);
+      transition: all .4s; }
   .contact p {
-    padding-top: 4rem; }
+    padding-top: 4rem;
+    line-height: 1; }
 
 .bio {
   background-color: var(--purple);

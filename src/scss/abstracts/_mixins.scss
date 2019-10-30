@@ -30,3 +30,20 @@
   }
 }
 
+@mixin hover-underline {
+   &:after {
+     content: "";
+     display: block;
+     height: 2px;
+     width: 100%;
+     background-color: var(--black);
+     transform: translateX(-100%);
+     margin-top: .2rem;
+   }
+
+   &:hover:after {
+     transform: translateX(0);
+     transition: all .4s;
+   }
+}
+
