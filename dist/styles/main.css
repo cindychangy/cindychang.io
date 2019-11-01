@@ -331,7 +331,8 @@ p {
       font-size: 2.4rem; } }
   @media (min-width: 992px) {
     .client {
-      order: 1; } }
+      order: 1;
+      max-width: 22rem; } }
   .client:not(:last-child) {
     margin-bottom: 2rem; }
 
@@ -390,27 +391,27 @@ p {
         width: 28rem; } }
 
 .client--1:hover ~ .work__art .shape--1 {
-  background: url("/dist/img/domino-cover.png") no-repeat;
-  background-size: 480px; }
+  background: url("/dist/img/domino-cover.jpg") no-repeat;
+  background-size: 460px; }
 
 .client--2:hover ~ .work__art .shape--3 {
-  background: url("/dist/img/spark-cover.png") no-repeat;
-  background-size: 320px; }
+  background: url("/dist/img/spark-cover.jpg") no-repeat;
+  background-size: 335px; }
 
 .client--3:hover ~ .work__art .shape--2 {
-  background: url("/dist/img/hue-cover.png") no-repeat;
+  background: url("/dist/img/hue-cover.jpg") no-repeat;
   background-size: 400px; }
 
-.client--4:hover ~ .work__art .shape--2 {
-  background: url("/dist/img/apex-cover.png") no-repeat;
-  background-size: 400px; }
+.client--4:hover ~ .work__art .shape--3 {
+  background: url("/dist/img/apex-cover.jpg") no-repeat;
+  background-size: 330px; }
 
 .client--5:hover ~ .work__art .shape--1 {
-  background: url("/dist/img/katie-cover.png") no-repeat;
-  background-size: 480px; }
+  background: url("/dist/img/katie-cover.jpg") no-repeat;
+  background-size: 450px; }
 
 .client--6:hover ~ .work__art .shape--2 {
-  background: url("/dist/img/skate-cover.png") no-repeat;
+  background: url("/dist/img/skate-cover.jpg") no-repeat;
   background-size: 400px; }
 
 .client--5:hover ~ .work__art .shape--1,
@@ -420,37 +421,40 @@ p {
   overflow: hidden; }
 
 .client--5:hover ~ .work__art .shape--2,
-.client--5:hover ~ .work__art .shape--3,
-.client--1:hover ~ .work__art .shape--2,
-.client--1:hover ~ .work__art .shape--3 {
+.client--1:hover ~ .work__art .shape--2 {
   background-color: #f2f2f2; }
 
-.client--6:hover ~ .work__art .shape--3,
-.client--3:hover ~ .work__art .shape--3 {
+.client--5:hover ~ .work__art .shape--3,
+.client--1:hover ~ .work__art .shape--3 {
+  background-color: #eeeeef; }
+
+.client--2:hover ~ .work__art .shape--3,
+.client--4:hover ~ .work__art .shape--3 {
   z-index: 99;
   transform: scale(1.05); }
 
-.client--6:hover ~ .work__art .shape--1,
-.client--6:hover ~ .work__art .shape--2,
-.client--3:hover ~ .work__art .shape--1,
-.client--3:hover ~ .work__art .shape--2 {
+.client--2:hover ~ .work__art .shape--1,
+.client--4:hover ~ .work__art .shape--1 {
   background-color: #f2f2f2; }
 
 .client--2:hover ~ .work__art .shape--2,
-.client--4:hover ~ .work__art .shape--2,
-.client--8:hover ~ .work__art .shape--2 {
+.client--4:hover ~ .work__art .shape--2 {
+  background-color: #eeeeef; }
+
+.client--3:hover ~ .work__art .shape--2,
+.client--6:hover ~ .work__art .shape--2 {
   background-size: 220px;
   transform: scale(1.05) rotate(56deg);
   background-size: cover;
   z-index: 99; }
 
-.client--2:hover ~ .work__art .shape--1,
-.client--2:hover ~ .work__art .shape--2,
-.client--4:hover ~ .work__art .shape--1,
-.client--4:hover ~ .work__art .shape--2,
-.client--8:hover ~ .work__art .shape--1,
-.client--8:hover ~ .work__art .shape--2 {
+.client--3:hover ~ .work__art .shape--1,
+.client--6:hover ~ .work__art .shape--1 {
   background-color: #f2f2f2; }
+
+.client--3:hover ~ .work__art .shape--3,
+.client--6:hover ~ .work__art .shape--3 {
+  background-color: #eeeeef; }
 
 .project {
   padding: 3rem 4rem;
