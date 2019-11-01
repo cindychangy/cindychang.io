@@ -3,6 +3,8 @@
   --black: #232431;
   --pink: #ff059d;
   --gray: #838994;
+  --gray-light-1: #eeeeef;
+  --gray-light-2: #f8f8f8;
   --coral: #fbabab;
   --orange: #ff8b5c;
   --green: #32c632;
@@ -323,6 +325,10 @@ p {
   transition: all .2s;
   font-weight: 200;
   order: 2; }
+  .client a {
+    transition: all .3s; }
+    .client a:hover {
+      color: var(--gray); }
   @media (min-width: 768px) {
     .client {
       font-size: 2.4rem; } }
@@ -340,8 +346,8 @@ p {
     .shape {
       position: absolute; } }
   .shape--1 {
-    height: 15rem;
-    width: 15rem;
+    height: 17rem;
+    width: 17rem;
     border-radius: 50%;
     background: #2a2f81; }
     @media (min-width: 992px) {
@@ -361,15 +367,17 @@ p {
     background-color: var(--teal);
     transform: rotate(56deg);
     z-index: 3;
-    bottom: 6rem; }
+    right: 6.6rem;
+    bottom: 7rem; }
     @media (min-width: 992px) {
       .shape--2 {
-        right: 15.6rem;
         bottom: -15.9rem;
+        right: 10.6rem;
         height: 30rem;
         width: 30rem; } }
     @media (min-width: 1200px) {
       .shape--2 {
+        right: 14.6rem;
         height: 40rem;
         width: 40rem; } }
   .shape--3 {
@@ -380,6 +388,8 @@ p {
     right: -10rem; }
     @media (min-width: 992px) {
       .shape--3 {
+        height: 19rem;
+        width: 19rem;
         bottom: -3rem;
         right: -5rem; } }
     @media (min-width: 1200px) {
@@ -387,71 +397,74 @@ p {
         height: 28rem;
         width: 28rem; } }
 
-.client--1:hover ~ .work__art .shape--1 {
-  background: url("/dist/img/domino-cover.jpg") no-repeat;
-  background-size: 460px; }
+@media (min-width: 1200px) {
+  .client--1:hover ~ .work__art .shape--1 {
+    background: url("/dist/img/domino-cover.jpg") no-repeat;
+    background-size: 460px; } }
 
-.client--2:hover ~ .work__art .shape--3 {
-  background: url("/dist/img/spark-cover.jpg") no-repeat;
-  background-size: 335px; }
+@media (min-width: 1200px) {
+  .client--2:hover ~ .work__art .shape--3 {
+    background: url("/dist/img/spark-cover.jpg") no-repeat;
+    background-size: 335px; } }
 
-.client--3:hover ~ .work__art .shape--2 {
-  background: url("/dist/img/hue-cover.jpg") no-repeat;
-  background-size: 400px; }
+@media (min-width: 1200px) {
+  .client--3:hover ~ .work__art .shape--2 {
+    background: url("/dist/img/hue-cover.jpg") no-repeat;
+    background-size: 400px; } }
 
-.client--4:hover ~ .work__art .shape--3 {
-  background: url("/dist/img/apex-cover.jpg") no-repeat;
-  background-size: 330px; }
+@media (min-width: 1200px) {
+  .client--4:hover ~ .work__art .shape--3 {
+    background: url("/dist/img/apex-cover.jpg") no-repeat;
+    background-size: 330px; } }
 
-.client--5:hover ~ .work__art .shape--1 {
-  background: url("/dist/img/katie-cover.jpg") no-repeat;
-  background-size: 450px; }
+@media (min-width: 1200px) {
+  .client--5:hover ~ .work__art .shape--1 {
+    background: url("/dist/img/katie-cover.jpg") no-repeat;
+    background-size: 450px; } }
 
-.client--6:hover ~ .work__art .shape--2 {
-  background: url("/dist/img/skate-cover.jpg") no-repeat;
-  background-size: 400px; }
+@media (min-width: 1200px) {
+  .client--6:hover ~ .work__art .shape--2 {
+    background: url("/dist/img/skate-cover.jpg") no-repeat;
+    background-size: 400px; } }
 
-.client--5:hover ~ .work__art .shape--1,
-.client--1:hover ~ .work__art .shape--1 {
-  z-index: 99;
-  transform: scale(1.05);
-  overflow: hidden; }
+@media (min-width: 1200px) {
+  .client--5:hover ~ .work__art .shape--1,
+  .client--1:hover ~ .work__art .shape--1 {
+    z-index: 99;
+    transform: scale(1.05);
+    overflow: hidden; }
+  .client--5:hover ~ .work__art .shape--2,
+  .client--1:hover ~ .work__art .shape--2 {
+    background-color: var(--gray-light-1); }
+  .client--5:hover ~ .work__art .shape--3,
+  .client--1:hover ~ .work__art .shape--3 {
+    background-color: var(--gray-light-2); } }
 
-.client--5:hover ~ .work__art .shape--2,
-.client--1:hover ~ .work__art .shape--2 {
-  background-color: #f2f2f2; }
+@media (min-width: 1200px) {
+  .client--2:hover ~ .work__art .shape--3,
+  .client--4:hover ~ .work__art .shape--3 {
+    z-index: 99;
+    transform: scale(1.05); }
+  .client--2:hover ~ .work__art .shape--1,
+  .client--4:hover ~ .work__art .shape--1 {
+    background-color: var(--gray-light-1); }
+  .client--2:hover ~ .work__art .shape--2,
+  .client--4:hover ~ .work__art .shape--2 {
+    background-color: var(--gray-light-2); } }
 
-.client--5:hover ~ .work__art .shape--3,
-.client--1:hover ~ .work__art .shape--3 {
-  background-color: #eeeeef; }
-
-.client--2:hover ~ .work__art .shape--3,
-.client--4:hover ~ .work__art .shape--3 {
-  z-index: 99;
-  transform: scale(1.05); }
-
-.client--2:hover ~ .work__art .shape--1,
-.client--4:hover ~ .work__art .shape--1 {
-  background-color: #f2f2f2; }
-
-.client--2:hover ~ .work__art .shape--2,
-.client--4:hover ~ .work__art .shape--2 {
-  background-color: #eeeeef; }
-
-.client--3:hover ~ .work__art .shape--2,
-.client--6:hover ~ .work__art .shape--2 {
-  background-size: 220px;
-  transform: scale(1.05) rotate(56deg);
-  background-size: cover;
-  z-index: 99; }
-
-.client--3:hover ~ .work__art .shape--1,
-.client--6:hover ~ .work__art .shape--1 {
-  background-color: #f2f2f2; }
-
-.client--3:hover ~ .work__art .shape--3,
-.client--6:hover ~ .work__art .shape--3 {
-  background-color: #eeeeef; }
+@media (min-width: 1200px) {
+  .client--3:hover ~ .work__art .shape--2,
+  .client--6:hover ~ .work__art .shape--2 {
+    background-size: 220px;
+    transform: scale(1.05) rotate(56deg);
+    background-size: cover;
+    z-index: 99; }
+  .client--3:hover ~ .work__art .shape--1,
+  .client--6:hover ~ .work__art .shape--1 {
+    background-color: var(--gray-light-1); }
+  .client--3:hover ~ .work__art .shape--3,
+  .client--6:hover ~ .work__art .shape--3 {
+    background-color: var(--gray-light-2); } }
 
 .project {
   padding: 3rem 4rem;
