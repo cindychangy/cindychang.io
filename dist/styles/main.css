@@ -72,11 +72,8 @@ h3 {
 p {
   font-family: var(--bodyFont);
   font-size: 1.7rem;
-  line-height: 1.4;
+  line-height: 1.5;
   font-weight: 200; }
-  @media (min-width: 576px) {
-    p {
-      font-size: 1.9rem; } }
 
 .callout-text {
   font-size: 1.9rem;
@@ -587,7 +584,7 @@ p {
         .bio__content__icons {
           text-align: right; } }
       .bio__content__icons a:not(:last-child) {
-        margin-right: 1rem; }
+        margin-right: 1.2rem; }
       .bio__content__icons a svg {
         transition: all .2s; }
         .bio__content__icons a svg:hover {
