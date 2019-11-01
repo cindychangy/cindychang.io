@@ -71,8 +71,8 @@
     @include screen-lg {
       right: 0;
       bottom: 0;
-      height: 26rem;
-      width: 26rem;
+      height: 29rem;
+      width: 29rem;
     }
 
     @include screen-xl {
@@ -82,13 +82,13 @@
   }
 
   &--2 {
-    height: 18rem;
-    width: 18rem;
+    height: 16rem;
+    width: 16rem;
     clip-path: circle(48.2% at 0 52%);
     background-color: var(--teal);
     transform: rotate(56deg);
     z-index: 3;
-    right: 6.6rem;
+    right: 2rem;
     bottom: 7rem;
 
     @include screen-lg {
