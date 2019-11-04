@@ -24,7 +24,7 @@
 
   &__content {
     width: 100%;
-    padding: 1rem 2.2rem;
+    padding: 2rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -107,4 +107,9 @@
        }
      }
   }
+}
+
+.close {
+  opacity: 0 !important;
+  visibility: hidden !important;
 }

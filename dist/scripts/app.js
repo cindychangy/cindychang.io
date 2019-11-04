@@ -1,1 +1,1 @@
-console.log("hello");
+"use strict";var bioBody=document.querySelector(".bio"),bioLink=document.querySelector(".bio-link");closePopup=function(){bioBody.classList.toggle("close")},removeClose=function(){bioBody.classList.contains("close")&&bioBody.classList.toggle("close")},bioLink.addEventListener("click",removeClose),bioBody.addEventListener("click",closePopup);
