@@ -1,12 +1,12 @@
 const bioBody = document.querySelector('.bio');
 const bioLink = document.querySelector('.bio-link');
 
-closePopup = () => {
+const closePopup = () => {
   bioBody.classList.toggle('close');
 }
 
-removeClose = () => {
-  if(bioBody.classList.contains('close')) {
+const removeClose = () => {
+  if (bioBody.classList.contains('close')) {
     bioBody.classList.toggle('close');
   }
 }
