@@ -1,17 +1,1 @@
-"use strict";
-
-var bioBody = document.querySelector('.bio');
-var bioLink = document.querySelector('.bio-link');
-
-var closePopup = function closePopup() {
-  bioBody.classList.toggle('close');
-};
-
-var removeClose = function removeClose() {
-  if (bioBody.classList.contains('close')) {
-    bioBody.classList.toggle('close');
-  }
-};
-
-bioLink.addEventListener('click', removeClose);
-bioBody.addEventListener('click', closePopup);
+"use strict";var bioBody=document.querySelector(".bio"),bioLink=document.querySelector(".bio-link"),closePopup=function(){bioBody.classList.toggle("close")},removeClose=function(){bioBody.classList.contains("close")&&bioBody.classList.toggle("close")};bioLink.addEventListener("click",removeClose),bioBody.addEventListener("click",closePopup);
