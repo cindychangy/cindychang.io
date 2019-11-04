@@ -82,26 +82,36 @@
   }
 
   &--2 {
-    height: 16rem;
+    position: absolute;
+    bottom: 9rem;
+    right: -5rem;
     width: 16rem;
-    clip-path: circle(48.2% at 0 52%);
-    background-color: var(--teal);
-    transform: rotate(56deg);
-    z-index: 3;
-    right: 2rem;
-    bottom: 7rem;
+    height: 8rem;
+    border-top-left-radius: 30rem;
+    border-top-right-radius: 30rem;
+    -webkit-transform-origin: 2rem 2rem;
+    z-index: 90;
+    transform: rotate(140deg);
+    background: var(--teal);
 
     @include screen-lg {
-      bottom: -15.9rem;
-      right: 10.6rem;
-      height: 30rem;
-      width: 30rem;
+      bottom: -2rem;
+      right: -5rem;
+      width: 22rem;
+      height: 12rem;
+      border-top-left-radius: 20rem;
+      border-top-right-radius: 20rem;
+      -webkit-transform-origin: 2rem 2rem;
     }
 
     @include screen-xl {
-      right: 14.6rem;
-      height: 40rem;
+      bottom: -2rem;
+      right: -17rem;
       width: 40rem;
+      height: 20rem;
+      border-top-left-radius: 30rem;
+      border-top-right-radius: 30rem;
+      -webkit-transform-origin: 2rem 2rem;
     }
   }
 
@@ -109,7 +119,7 @@
     height: 12rem;
     width: 12rem;
     background: var(--coral);
-    bottom: 26rem;
+    bottom: 10rem;
     right: -10rem;
 
     @include screen-lg {
@@ -130,37 +140,43 @@
 .client--1:hover~.work__art .shape--1 {
   @include screen-xl {
     background: url('/dist/img/domino-cover.jpg') no-repeat;
-    background-size: 460px;
+    background-size: 480px;
+    background-position: bottom left;
   }
 }
 .client--2:hover~.work__art .shape--3 {
   @include screen-xl {
     background: url('/dist/img/spark-cover.jpg') no-repeat;
     background-size: 335px;
+    background-position: bottom right;
   }
 }
 .client--3:hover~.work__art .shape--2 {
   @include screen-xl {
     background: url('/dist/img/hue-cover.jpg') no-repeat;
-    background-size: 400px;
+    background-size: 420px;
+    background-position: bottom right;
   }
 }
 .client--4:hover~.work__art .shape--3 {
   @include screen-xl {
     background: url('/dist/img/apex-cover.jpg') no-repeat;
     background-size: 330px;
+    background-position: top right;
   }
 }
 .client--5:hover~.work__art .shape--1 {
   @include screen-xl {
     background: url('/dist/img/katie-cover.jpg') no-repeat;
-    background-size: 450px;
+    background-size: 470px;
+    background-position: bottom right;
   }
 }
 .client--6:hover~.work__art .shape--2 {
   @include screen-xl {
     background: url('/dist/img/skate-cover.jpg') no-repeat;
-    background-size: 400px;
+    background-size: 300px;
+    background-position: bottom;
   }
 }
 
@@ -209,7 +225,7 @@
   @include screen-xl {
     .shape--2 {
       background-size: 220px;
-      transform: scale(1.05) rotate(56deg);
+      transform: scale(1.05) rotate(140deg);
       background-size: cover;
       z-index: 99;
     }
