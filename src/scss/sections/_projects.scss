@@ -1,6 +1,6 @@
 .project {
   padding: 3rem 4rem;
-  background: #f5f8fb;
+  background: var(--gray-light-2);
 
   @include screen-lg {
     padding: 6rem 14rem;
@@ -12,10 +12,6 @@
 
     @include screen-sm {
       text-align: right;
-    }
-
-    p {
-      color: var(--gray);
     }
   }
 

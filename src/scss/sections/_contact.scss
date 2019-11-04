@@ -22,11 +22,11 @@
 
   a {
     font-weight: 600;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    top: 7px;
-    @include hover-underline;
+    transition: all .2s;
+
+    &:hover {
+      color: var(--gray);
+    }
   }
 
   p {
