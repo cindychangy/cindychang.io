@@ -59,6 +59,8 @@
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 9000;
 
   li {
     display: block;
@@ -73,7 +75,10 @@
       color: var(--black);
       display: inline-block;
       overflow: hidden;
-      @include hover-underline;
+
+      @include screen-lg {
+        @include hover-underline;
+      }
     }
   }
 }
