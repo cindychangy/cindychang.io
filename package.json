@@ -1,7 +1,7 @@
 {
-  "name": "cindychang.io",
+  "name": "cindychang.co",
   "version": "1.0.0",
-  "description": "This is the website for the portfolio of Cindy Chang / cindychang.io",
+  "description": "This is the website for the portfolio of Cindy Chang / cindychang.co",
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel server watch-sass watch-js",
@@ -15,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cindychangy/cindychang.io.git"
+    "url": "git+https://github.com/cindychangy/cindychang.co.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cindychangy/cindychang.io/issues"
+    "url": "https://github.com/cindychangy/cindychang.co/issues"
   },
-  "homepage": "https://github.com/cindychangy/cindychang.io#readme",
+  "homepage": "https://github.com/cindychangy/cindychang.co#readme",
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",

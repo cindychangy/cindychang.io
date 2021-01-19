@@ -1,5 +1,5 @@
-# cindychang.io
-This is the website for the portfolio of cindychang.io
+# cindychang.co
+This is the website for the portfolio of cindychang.co
 
 ## Installation
 Use NPM to install
